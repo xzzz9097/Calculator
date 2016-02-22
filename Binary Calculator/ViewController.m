@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "BinaryNumber.h"
 
 @implementation ViewController
+
+@synthesize decimalField;
+@synthesize binaryField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,6 +24,14 @@
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+
+- (IBAction)onConvertClicked:(id)sender {
+    NSInteger mDecimalNumber = [decimalField integerValue];
+    
+    BinaryNumber* mBinary = [[BinaryNumber alloc] initFromInteger:mDecimalNumber];
+    
+    [binaryField setStringValue:[mBinary getBinaryNumber]];
 }
 
 @end

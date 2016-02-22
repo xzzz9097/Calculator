@@ -10,6 +10,10 @@
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet NSTextField *decimalField;
+@property (weak) IBOutlet NSTextField *binaryField;
+
+- (IBAction)onConvertClicked:(id)sender;
 
 @end
 
