@@ -26,7 +26,9 @@
 - (void) fromInteger:(NSInteger)n {
     integerNumber = n;
     
-    NSUInteger digits = ceil(log2(integerNumber));
+    // Gather binary digits by rounding down log2 of n and adding 1
+    // e.g. -> log2(4) + 1 = 2 + 1 -> 3 digits
+    NSUInteger digits = floor(log2(integerNumber)) + 1;
     NSUInteger i = digits;
     
     binaryNumber = [NSMutableArray arrayWithCapacity:digits];
