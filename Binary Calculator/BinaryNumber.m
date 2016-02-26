@@ -12,6 +12,7 @@
 
 @synthesize integerNumber;
 @synthesize binaryNumber;
+@synthesize binaryDigits;
 
 - (NSInteger) getDigit:(NSInteger) i {
     return [[binaryNumber objectAtIndex:i] integerValue];
@@ -28,10 +29,10 @@
     
     // Gather binary digits by rounding down log2 of n and adding 1
     // e.g. -> log2(4) + 1 = 2 + 1 -> 3 digits
-    NSUInteger digits = floor(log2(integerNumber)) + 1;
-    NSUInteger i = digits;
+    binaryDigits = floor(log2(labs(integerNumber))) + 1;
+    NSUInteger i = binaryDigits;
     
-    binaryNumber = [NSMutableArray arrayWithCapacity:digits];
+    binaryNumber = [NSMutableArray arrayWithCapacity:binaryDigits];
     
     while (i > 0) {
         i--;

@@ -13,6 +13,7 @@
 // Properties declarations
 @property(nonatomic, readwrite) NSInteger integerNumber;
 @property(nonatomic, readwrite) NSMutableArray *binaryNumber;
+@property(nonatomic, readwrite) NSInteger binaryDigits;
 
 // Methods declarations
 - (NSInteger) getDigit:(NSInteger)i;
