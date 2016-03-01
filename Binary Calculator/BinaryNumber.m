@@ -29,7 +29,8 @@
     
     // Gather binary digits by rounding down log2 of n and adding 1
     // e.g. -> log2(4) + 1 = 2 + 1 -> 3 digits
-    binaryDigits = floor(log2(labs(integerNumber))) + 1;
+    NSUInteger absoluteIntegerNumber = labs(integerNumber);
+    binaryDigits = floor(log2(absoluteIntegerNumber)) + 1;
     NSUInteger i = binaryDigits;
     
     binaryNumber = [NSMutableArray arrayWithCapacity:binaryDigits];
@@ -37,11 +38,11 @@
     while (i > 0) {
         i--;
         
-        NSInteger binaryDigit = integerNumber % 2;
+        NSInteger binaryDigit = absoluteIntegerNumber % 2;
         
         [binaryNumber insertObject:[NSNumber numberWithInteger:binaryDigit] atIndex:0];
         
-        integerNumber /= 2;
+        absoluteIntegerNumber /= 2;
     }
 }
 
@@ -51,6 +52,11 @@
     
     for (NSNumber* digit in binaryNumber) {
         [numberString appendString:[digit stringValue]];
+    }
+    
+    // Add minus if negative
+    if (integerNumber < 0) {
+        [numberString insertString:@"-" atIndex:0];
     }
     
     return numberString;
