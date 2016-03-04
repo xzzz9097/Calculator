@@ -36,6 +36,17 @@
     }
 }
 
+- (void) fromDouble:(double)n {
+    [self fromInteger:(NSInteger)n];
+    
+    double floatingPart = n - integerNumber;
+    
+    while (floatingPart > 0) {
+        [binaryNumber addObject:[NSNumber numberWithInteger:floor(floatingPart * 2)]];
+        floatingPart = floatingPart * 2 - floor(floatingPart * 2);
+    }
+}
+
 - (NSString*) getBinaryNumber {
     // We create a string from the array
     NSMutableString* numberString = [[NSMutableString alloc] initWithCapacity:[binaryNumber count]];
@@ -57,6 +68,16 @@
     
     if (self) {
         [self fromInteger:n];
+    }
+    
+    return self;
+}
+
+- (id) initFromDouble:(double)n {
+    self = [super init];
+    
+    if (self) {
+        [self fromDouble:n];
     }
     
     return self;

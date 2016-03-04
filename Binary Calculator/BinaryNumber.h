@@ -17,8 +17,10 @@
 
 // Methods declarations
 - (void) fromInteger:(NSInteger)n;
+- (void) fromDouble:(double)n;
 - (NSString*) getBinaryNumber;
 - (id) initFromInteger:(NSInteger)n;
+- (id) initFromDouble:(double)n;
 - (void) sum:(BinaryNumber*)b;
 
 @end

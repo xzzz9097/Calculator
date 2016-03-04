@@ -27,9 +27,9 @@
 }
 
 - (IBAction)onConvertClicked:(id)sender {
-    NSInteger mDecimalNumber = [decimalField integerValue];
+    double mDecimalNumber = [decimalField doubleValue];
     
-    BinaryNumber* mBinary = [[BinaryNumber alloc] initFromInteger:mDecimalNumber];
+    BinaryNumber* mBinary = [[BinaryNumber alloc] initFromDouble:mDecimalNumber];
     
     [binaryField setStringValue:[mBinary getBinaryNumber]];
 }
