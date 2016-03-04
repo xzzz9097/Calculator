@@ -14,16 +14,6 @@
 @synthesize binaryNumber;
 @synthesize binaryDigits;
 
-- (NSInteger) getDigit:(NSInteger) i {
-    return [[binaryNumber objectAtIndex:i] integerValue];
-}
-
-- (NSUInteger) countIntegerDigits:(NSInteger)n {
-    NSNumber* number = [[NSNumber alloc] initWithInteger:n];
-    
-    return [[number stringValue] length];
-}
-
 - (void) fromInteger:(NSInteger)n {
     integerNumber = n;
     

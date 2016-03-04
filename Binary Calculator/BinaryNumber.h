@@ -16,8 +16,6 @@
 @property(nonatomic, readwrite) NSInteger binaryDigits;
 
 // Methods declarations
-- (NSInteger) getDigit:(NSInteger)i;
-- (NSUInteger) countIntegerDigits:(NSInteger)n;
 - (void) fromInteger:(NSInteger)n;
 - (NSString*) getBinaryNumber;
 - (id) initFromInteger:(NSInteger)n;
