@@ -41,6 +41,10 @@
     
     double floatingPart = n - integerNumber;
     
+    if (floatingPart > 0) {
+        [binaryNumber addObject:[NSNumber numberWithInt:-1]];
+    }
+    
     while (floatingPart > 0) {
         [binaryNumber addObject:[NSNumber numberWithInteger:floor(floatingPart * 2)]];
         floatingPart = floatingPart * 2 - floor(floatingPart * 2);
@@ -52,7 +56,11 @@
     NSMutableString* numberString = [[NSMutableString alloc] initWithCapacity:[binaryNumber count]];
     
     for (NSNumber* digit in binaryNumber) {
-        [numberString appendString:[digit stringValue]];
+        if ([digit integerValue] != -1) {
+            [numberString appendString:[digit stringValue]];
+        } else {
+            [numberString appendFormat:@"."];
+        }
     }
     
     // Add minus if negative
