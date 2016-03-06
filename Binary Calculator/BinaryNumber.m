@@ -39,7 +39,7 @@
 - (void) fromDouble:(double)n {
     [self fromInteger:(NSInteger)n];
     
-    double floatingPart = n - integerNumber;
+    double floatingPart = fabs(n - integerNumber);
     
     if (floatingPart > 0) {
         [binaryNumber addObject:[NSNumber numberWithInt:-1]];
