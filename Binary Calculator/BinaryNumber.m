@@ -59,7 +59,7 @@
         if ([digit integerValue] != -1) {
             [numberString appendString:[digit stringValue]];
         } else {
-            [numberString appendFormat:@"."];
+            [numberString appendString:@"."];
         }
     }
     
