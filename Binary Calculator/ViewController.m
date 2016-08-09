@@ -26,6 +26,9 @@
 }
 
 - (IBAction)onComputeClicked:(id)sender {
+    NSExpression* mExpression = [NSExpression expressionWithFormat:[inputField stringValue]];
+    
+    [resultField setStringValue:[mExpression expressionValueWithObject:nil context:nil]];
 }
 
 @end
