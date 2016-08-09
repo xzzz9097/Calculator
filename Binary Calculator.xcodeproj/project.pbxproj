@@ -15,7 +15,6 @@
 		0CFE13441C77836A0005549D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFE13421C77836A0005549D /* Main.storyboard */; };
 		0CFE134F1C77836B0005549D /* Binary_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE134E1C77836B0005549D /* Binary_CalculatorTests.m */; };
 		0CFE135A1C77836B0005549D /* Binary_CalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13591C77836B0005549D /* Binary_CalculatorUITests.m */; };
-		0CFE13691C77838D0005549D /* BinaryNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13681C77838D0005549D /* BinaryNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +51,6 @@
 		0CFE13551C77836B0005549D /* Binary CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFE13591C77836B0005549D /* Binary_CalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Binary_CalculatorUITests.m; sourceTree = "<group>"; };
 		0CFE135B1C77836B0005549D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CFE13671C77838D0005549D /* BinaryNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryNumber.h; sourceTree = "<group>"; };
-		0CFE13681C77838D0005549D /* BinaryNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +110,6 @@
 				0CFE13451C77836B0005549D /* Info.plist */,
 				0CFE133D1C77836A0005549D /* Binary_Calculator.xcdatamodeld */,
 				0CFE13371C77836A0005549D /* Supporting Files */,
-				0CFE13671C77838D0005549D /* BinaryNumber.h */,
-				0CFE13681C77838D0005549D /* BinaryNumber.m */,
 			);
 			path = "Binary Calculator";
 			sourceTree = "<group>";
@@ -274,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFE13691C77838D0005549D /* BinaryNumber.m in Sources */,
 				0CFE133F1C77836A0005549D /* Binary_Calculator.xcdatamodeld in Sources */,
 				0CFE133C1C77836A0005549D /* ViewController.m in Sources */,
 				0CFE13391C77836A0005549D /* main.m in Sources */,
@@ -499,6 +493,7 @@
 				0CFE13601C77836B0005549D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CFE13611C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +502,7 @@
 				0CFE13631C77836B0005549D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CFE13641C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +511,7 @@
 				0CFE13661C77836B0005549D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
