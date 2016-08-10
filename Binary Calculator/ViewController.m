@@ -26,9 +26,16 @@
 }
 
 - (IBAction)onComputeClicked:(id)sender {
-    NSExpression* mExpression = [NSExpression expressionWithFormat:[inputField stringValue]];
-    
-    [resultField setStringValue:[mExpression expressionValueWithObject:nil context:nil]];
+    @try {
+        // Parse expression
+        NSExpression* mExpression = [NSExpression expressionWithFormat:[inputField stringValue]];
+
+        // Set string
+        [resultField setStringValue:[mExpression expressionValueWithObject:nil context:nil]];
+    } @catch (NSException *exception) {
+        // Print an error message
+        [resultField setStringValue:@"Error"];
+    }
 }
 
 @end
