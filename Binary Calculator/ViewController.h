@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <DDMathParser.h>
 
 @interface ViewController : NSViewController
 

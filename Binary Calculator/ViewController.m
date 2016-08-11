@@ -28,10 +28,10 @@
 - (IBAction)onComputeClicked:(id)sender {
     @try {
         // Parse expression
-        NSExpression* mExpression = [NSExpression expressionWithFormat:[inputField stringValue]];
+        NSNumber* mResult = [[inputField stringValue] numberByEvaluatingString];
 
         // Set string
-        [resultField setStringValue:[mExpression expressionValueWithObject:nil context:nil]];
+        [resultField setStringValue:[mResult stringValue]];
     } @catch (NSException *exception) {
         // Print an error message
         [resultField setStringValue:@"Error"];
