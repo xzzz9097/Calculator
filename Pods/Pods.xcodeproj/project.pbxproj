@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C83D2133903A01A41C63F7464C452FD /* DDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F75121FBE43E60F419E3B47D6E6EAA84 /* DDTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E7B32A41E58372A7D0195E130FC02B5 /* DDMathOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACEB3CF44ACD68945D25E7342EFE774 /* DDMathOperator.m */; };
+		11D36D91CC8CC7EBA0E8DA5E2161E35D /* DDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BF21AFDE10403AC0A8FC85E9D1E530 /* DDParser.m */; };
+		15657E8BAE0D45CAF0BA16777FC6F59E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		19BF15C040EF367A9869B6665467F354 /* _DDVariableExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 0307B84D9EF5B5D67E1368534E9358FF /* _DDVariableExpression.m */; };
+		1A049A9C1B5C43AF48F7E98F59A2AD45 /* _DDPrecisionFunctionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = AB7687DB7619BE97B8E89813673D573F /* _DDPrecisionFunctionEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DD129EB9C8672BEB8F0D2BC09FFAE52 /* Pods-Binary Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 579398CF101EABE1187DFEF7151370D5 /* Pods-Binary Calculator-dummy.m */; };
+		1E5F590BB8F4BEA8E02B7A7C19F90C50 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		21A94B122C18F183E8BDC5FD1A995771 /* _DDPrecisionFunctionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 573324F38B663C25B71CE68725D3B2FA /* _DDPrecisionFunctionEvaluator.m */; };
+		2D40F4306D557BF7A32D59CAC738EA49 /* DDExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = A039203144F766366493DE4B32029A02 /* DDExpression.m */; };
+		31C0124EA61904CB395C415E7B62A141 /* _DDFunctionExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B3B25072659414330C364BA2FEA11F /* _DDFunctionExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		362A6726AC58A4170F9CFA6401FBC148 /* DDMathToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A89A70C6E5C7462D7F574AEB5447A9E /* DDMathToken.m */; };
+		3A75B2EA97CC43E90DA10E73DD66B277 /* Pods-Binary CalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD30284C13A3731AAA82524F95AB63 /* Pods-Binary CalculatorTests-dummy.m */; };
+		3E55D929D10A1532D2C27E5288F54AB2 /* DDMathEvaluator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6E44F418FD0B815BDD88DBFF80C5EF /* DDMathEvaluator+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9E73A65D9E81DAF46A2AA37E0F8B90 /* _DDRewriteRule.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F7455C4F98737177AD587D2159C5B1 /* _DDRewriteRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		647488A54FCFE335DA802979890E1EE4 /* _DDNumberExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = E0446B34ACE7EAE5F5E689DD7363764F /* _DDNumberExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6768F9893372530C9B1E6E602994F813 /* DDMathEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 93118CDA2ED5B585A99A46791CD923AF /* DDMathEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68CE1EF997852FF9EC9F89FE9C87EC78 /* _DDFunctionEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1770AFB63E24D45D112B74C4762F3 /* _DDFunctionEvaluator.m */; };
+		6DD41EF44B456A5CD5402243A9076874 /* DDMathOperatorTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F9A95E2530E8E79B997AAC336954B /* DDMathOperatorTypes.m */; };
+		7220A0C599F706E3C46B5C6EA84FA048 /* DDMathTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C2031D85D74E28E5F883994499630 /* DDMathTokenizer.m */; };
+		75ED5DA1E80B99645DED55F968D5393E /* DDMathOperatorSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2313F88B9F41B15969ED19D6043562 /* DDMathOperatorSet.m */; };
+		760CE5500BE3737F8D1DD2241262B6AF /* _DDMathTermResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7858A74D9D0CBC3384395C2A3A8FC /* _DDMathTermResolver.m */; };
+		76A9B068CFEA8B7B3854EDA36C257E05 /* DDMathOperatorSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A09F47E957D869E939A2AFC522B4AE9F /* DDMathOperatorSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77C41A7185723B8AA8E3826B8C267438 /* _DDParserTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFBB7E39D3DA98FC036E241595527A2 /* _DDParserTerm.m */; };
+		785EB2B7904ACEBFC48C14B05E10926A /* DDTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C8C84A5F3F52DA4762000880FCA2B4 /* DDTypes.m */; };
+		801BDE5865CD4C9631D3FE64CCC27CDD /* DDMathToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E764133FA96A2873E39D231F5D4E931 /* DDMathToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82EF3C6EB15C9A83CFD48D12900AD0B3 /* DDMathTokenInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF931E74C7CB53B33DE113E51405FE /* DDMathTokenInterpreter.m */; };
+		857CD15954586429C12A56EDBD8808EA /* DDMathParserMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E3375A8B898DB467E7B46E9AE3467F09 /* DDMathParserMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8945D15210725DA43B755F7E94B6CE68 /* Pods-Binary CalculatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B13B8E7FE1C10410CD4CA62ED109068 /* Pods-Binary CalculatorUITests-dummy.m */; };
+		8A5B3EDA6BB54ED942D65C05CCF932C9 /* _DDVariableExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = A57E274AEDB1F5476BDF71B0A894A037 /* _DDVariableExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C7E990514327F743E26EBB4C4FCA0E5 /* DDMathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 13616C120EEDB715DE738DF43BCC4757 /* DDMathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C9899EBAF911296824295E822C4F3E5 /* DDParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 71129FD62746EEAB2621E7D899141B28 /* DDParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D3904FCD2E5C996C7F45AEB13F12B3 /* DDMathTokenInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E07E41326B295A6437E5DAF84B2E26 /* DDMathTokenInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B5B681BE777463B803FE1C2372A419D /* DDMathParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B6C81EC0691F0B0E92749BD31F7FA /* DDMathParser-dummy.m */; };
+		A22359323E2582453B66B6DED7FE8F33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		B052B5521883A6B2BEDE060290CF7063 /* DDMathEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D806B0167B04618DBEBED36E7D97744 /* DDMathEvaluator.m */; };
+		BCE72144EA16F4965C1184D289C23C48 /* _DDDecimalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85259B99DE13BD538EECE66AA0C4A684 /* _DDDecimalFunctions.m */; };
+		C1584D8ABF7A9E35BAAD51FEA0187778 /* _DDDecimalFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 645537A8177B94985D41C51DA26070DF /* _DDDecimalFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C76CCD422C5589E972D4D44BA760F490 /* DDMathOperatorTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DFEF8231BD0B8DD097590C3921C50461 /* DDMathOperatorTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FF0D07EAA344B828C34B2B4232B8A7 /* _DDNumberExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E27E74F138318992737CA30360B7134 /* _DDNumberExpression.m */; };
+		C9DFB937400F2374442654E06A9ED7D2 /* NSString+DDMathParsing.h in Headers */ = {isa = PBXBuildFile; fileRef = ECACCCC8BB006F215928C4C94EC348A8 /* NSString+DDMathParsing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0DBB60C6AE15B850408311CBB1C1FD3 /* DDExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A3E7A36066B81624979594370FBD15 /* DDExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2F37935293CD9570767944AF4404738 /* _DDFunctionEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 98869F5DD5910304493E37834A87E3E4 /* _DDFunctionEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5F84ED3EC850A1B9E842261B922E458 /* NSString+DDMathParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = E0356FC6C3E8B25CEE0F3A717276068C /* NSString+DDMathParsing.m */; };
+		D6AEF1D5E65C59D8FA97D40DD30158AA /* _DDFunctionExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BA96F879850653099918A5096C6057DC /* _DDFunctionExpression.m */; };
+		D8B5AA80F6A8B41C0F5CF5EE5C90CE00 /* DDExpressionRewriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF01D5E8AE4B9EA1D0ECF701B6771EA /* DDExpressionRewriter.m */; };
+		DB5E6C7E0D7C2986D354C27D20B78A82 /* DDEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F6EAE08253595BDDFF35F41232B50B /* DDEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E43B7DA1A8D6A3C4CA9D08473F3C8578 /* DDEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CB80FC5D06DBFDE9F1A2B939005F9EFA /* DDEnumerator.m */; };
+		F0923449DA242DDB788AF28710D866A8 /* DDMathTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D1FE5280C5EC382FCC3295589FA5B4D5 /* DDMathTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F15EA8146B9437290B832CE435A0E3C5 /* _DDParserTerm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE1AE2E905BCEFA9AB91A5EC2A76F50 /* _DDParserTerm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2433FC14F73DD3B36012DE08B547905 /* _DDMathTermResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FE8EA9433D48548BEA9A3EF96E32A5 /* _DDMathTermResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E31532107365C42456D986C76057C6 /* _DDRewriteRule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FDF903AB8901CECB0E7A82CC2E6977 /* _DDRewriteRule.m */; };
+		F6F0878F8744229635F3801672A3251A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		F9FA84BC84D524BCF2F73B34A27BACCB /* DDExpressionRewriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FFBF27B3153894BBE9963ACA7DD9B8 /* DDExpressionRewriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC9961041B6322C4F4778FC78EDA6A9 /* DDMathOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = E919B849F775BF61F460C789D6069520 /* DDMathOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1B0E5110841EC0E559ECE37D7EF3FDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B562B0A8A59571B9D98EA61DE2812DDA;
+			remoteInfo = DDMathParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0307B84D9EF5B5D67E1368534E9358FF /* _DDVariableExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDVariableExpression.m; path = DDMathParser/_DDVariableExpression.m; sourceTree = "<group>"; };
+		0A5D63FD9C6B9EF2D65AFAE7990DE5AC /* libPods-Binary Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Binary Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8B6C81EC0691F0B0E92749BD31F7FA /* DDMathParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDMathParser-dummy.m"; sourceTree = "<group>"; };
+		0AAA5B9211A5E9BAC7B6E6ED1751E665 /* Pods-Binary CalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Binary CalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E764133FA96A2873E39D231F5D4E931 /* DDMathToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathToken.h; path = DDMathParser/DDMathToken.h; sourceTree = "<group>"; };
+		13616C120EEDB715DE738DF43BCC4757 /* DDMathParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathParser.h; path = DDMathParser/DDMathParser.h; sourceTree = "<group>"; };
+		1557BBAD4A78523C50D0B552B1C6DA24 /* Pods-Binary Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Binary Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		1F6E44F418FD0B815BDD88DBFF80C5EF /* DDMathEvaluator+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDMathEvaluator+Private.h"; path = "DDMathParser/DDMathEvaluator+Private.h"; sourceTree = "<group>"; };
+		25641012061DFA65F0460A29D4C0234A /* libPods-Binary CalculatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Binary CalculatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FE8EA9433D48548BEA9A3EF96E32A5 /* _DDMathTermResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDMathTermResolver.h; path = DDMathParser/_DDMathTermResolver.h; sourceTree = "<group>"; };
+		2A89A70C6E5C7462D7F574AEB5447A9E /* DDMathToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathToken.m; path = DDMathParser/DDMathToken.m; sourceTree = "<group>"; };
+		2B04E35B5DCB52F52B7BE9D17D65A0A9 /* Pods-Binary CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Binary CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B13B8E7FE1C10410CD4CA62ED109068 /* Pods-Binary CalculatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Binary CalculatorUITests-dummy.m"; sourceTree = "<group>"; };
+		2D2313F88B9F41B15969ED19D6043562 /* DDMathOperatorSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathOperatorSet.m; path = DDMathParser/DDMathOperatorSet.m; sourceTree = "<group>"; };
+		386971D0559DD9676F0B3E885FC8B842 /* Pods-Binary Calculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Binary Calculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		45B3B25072659414330C364BA2FEA11F /* _DDFunctionExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDFunctionExpression.h; path = DDMathParser/_DDFunctionExpression.h; sourceTree = "<group>"; };
+		4FE1AE2E905BCEFA9AB91A5EC2A76F50 /* _DDParserTerm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDParserTerm.h; path = DDMathParser/_DDParserTerm.h; sourceTree = "<group>"; };
+		52FDB6E92AB58DAE3CCDA0E5D947E10B /* Pods-Binary CalculatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Binary CalculatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		55BF21AFDE10403AC0A8FC85E9D1E530 /* DDParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDParser.m; path = DDMathParser/DDParser.m; sourceTree = "<group>"; };
+		573324F38B663C25B71CE68725D3B2FA /* _DDPrecisionFunctionEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDPrecisionFunctionEvaluator.m; path = DDMathParser/_DDPrecisionFunctionEvaluator.m; sourceTree = "<group>"; };
+		579398CF101EABE1187DFEF7151370D5 /* Pods-Binary Calculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Binary Calculator-dummy.m"; sourceTree = "<group>"; };
+		5ACEB3CF44ACD68945D25E7342EFE774 /* DDMathOperator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathOperator.m; path = DDMathParser/DDMathOperator.m; sourceTree = "<group>"; };
+		5ACFCAD09FA300CD0F0A4344CCE2C479 /* Pods-Binary Calculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Binary Calculator-resources.sh"; sourceTree = "<group>"; };
+		5D806B0167B04618DBEBED36E7D97744 /* DDMathEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathEvaluator.m; path = DDMathParser/DDMathEvaluator.m; sourceTree = "<group>"; };
+		61D1A7414C2D0B2CDE986810E53E9B3F /* Pods-Binary CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Binary CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		645537A8177B94985D41C51DA26070DF /* _DDDecimalFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDDecimalFunctions.h; path = DDMathParser/_DDDecimalFunctions.h; sourceTree = "<group>"; };
+		66978AE9DF6E794BB94876D48C371189 /* Pods-Binary CalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Binary CalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6DB1770AFB63E24D45D112B74C4762F3 /* _DDFunctionEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDFunctionEvaluator.m; path = DDMathParser/_DDFunctionEvaluator.m; sourceTree = "<group>"; };
+		6EF01D5E8AE4B9EA1D0ECF701B6771EA /* DDExpressionRewriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDExpressionRewriter.m; path = DDMathParser/DDExpressionRewriter.m; sourceTree = "<group>"; };
+		70FF79BDF4D8A565620ABD5D9D3A3BEF /* Pods-Binary CalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Binary CalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
+		71129FD62746EEAB2621E7D899141B28 /* DDParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDParser.h; path = DDMathParser/DDParser.h; sourceTree = "<group>"; };
+		849FE66FB76A1AD23C0C30F15D7AD1E5 /* Pods-Binary CalculatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Binary CalculatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85259B99DE13BD538EECE66AA0C4A684 /* _DDDecimalFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDDecimalFunctions.m; path = DDMathParser/_DDDecimalFunctions.m; sourceTree = "<group>"; };
+		8846555C8C810F06E81E81475D8A8372 /* Pods-Binary Calculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Binary Calculator-frameworks.sh"; sourceTree = "<group>"; };
+		88DE8D54400DECFF65A6A72F5B981800 /* Pods-Binary CalculatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Binary CalculatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E27E74F138318992737CA30360B7134 /* _DDNumberExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDNumberExpression.m; path = DDMathParser/_DDNumberExpression.m; sourceTree = "<group>"; };
+		93118CDA2ED5B585A99A46791CD923AF /* DDMathEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathEvaluator.h; path = DDMathParser/DDMathEvaluator.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98869F5DD5910304493E37834A87E3E4 /* _DDFunctionEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDFunctionEvaluator.h; path = DDMathParser/_DDFunctionEvaluator.h; sourceTree = "<group>"; };
+		9A1665CC8AAD9188D1706F608AB247C3 /* Pods-Binary Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Binary Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		A039203144F766366493DE4B32029A02 /* DDExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDExpression.m; path = DDMathParser/DDExpression.m; sourceTree = "<group>"; };
+		A09F47E957D869E939A2AFC522B4AE9F /* DDMathOperatorSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathOperatorSet.h; path = DDMathParser/DDMathOperatorSet.h; sourceTree = "<group>"; };
+		A0F7455C4F98737177AD587D2159C5B1 /* _DDRewriteRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDRewriteRule.h; path = DDMathParser/_DDRewriteRule.h; sourceTree = "<group>"; };
+		A57E274AEDB1F5476BDF71B0A894A037 /* _DDVariableExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDVariableExpression.h; path = DDMathParser/_DDVariableExpression.h; sourceTree = "<group>"; };
+		AB7687DB7619BE97B8E89813673D573F /* _DDPrecisionFunctionEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDPrecisionFunctionEvaluator.h; path = DDMathParser/_DDPrecisionFunctionEvaluator.h; sourceTree = "<group>"; };
+		B0A3E7A36066B81624979594370FBD15 /* DDExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDExpression.h; path = DDMathParser/DDExpression.h; sourceTree = "<group>"; };
+		B19F9A95E2530E8E79B997AAC336954B /* DDMathOperatorTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathOperatorTypes.m; path = DDMathParser/DDMathOperatorTypes.m; sourceTree = "<group>"; };
+		B6BF931E74C7CB53B33DE113E51405FE /* DDMathTokenInterpreter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathTokenInterpreter.m; path = DDMathParser/DDMathTokenInterpreter.m; sourceTree = "<group>"; };
+		B92AAEDB048A2C86C3A4862B425A9FAB /* libPods-Binary CalculatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Binary CalculatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA96F879850653099918A5096C6057DC /* _DDFunctionExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDFunctionExpression.m; path = DDMathParser/_DDFunctionExpression.m; sourceTree = "<group>"; };
+		BCC4EDDFFD8D569441812DA4A593576D /* DDMathParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDMathParser.xcconfig; sourceTree = "<group>"; };
+		BEA691C234D21878AAA2F406C7DF80E7 /* Pods-Binary CalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Binary CalculatorTests-resources.sh"; sourceTree = "<group>"; };
+		BEDDF94D7558C3E38CF7633FC6D56F8B /* Pods-Binary CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Binary CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		C819A62D74843D24BDD4A848031FA39C /* Pods-Binary CalculatorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Binary CalculatorUITests-resources.sh"; sourceTree = "<group>"; };
+		CB80FC5D06DBFDE9F1A2B939005F9EFA /* DDEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDEnumerator.m; path = DDMathParser/DDEnumerator.m; sourceTree = "<group>"; };
+		CB994A3E5AF3610E6BF7F65C467A75D5 /* DDMathParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDMathParser-prefix.pch"; sourceTree = "<group>"; };
+		CEFD30284C13A3731AAA82524F95AB63 /* Pods-Binary CalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Binary CalculatorTests-dummy.m"; sourceTree = "<group>"; };
+		CFFBB7E39D3DA98FC036E241595527A2 /* _DDParserTerm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDParserTerm.m; path = DDMathParser/_DDParserTerm.m; sourceTree = "<group>"; };
+		D1FE5280C5EC382FCC3295589FA5B4D5 /* DDMathTokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathTokenizer.h; path = DDMathParser/DDMathTokenizer.h; sourceTree = "<group>"; };
+		D4FDF903AB8901CECB0E7A82CC2E6977 /* _DDRewriteRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDRewriteRule.m; path = DDMathParser/_DDRewriteRule.m; sourceTree = "<group>"; };
+		DA73976EF46F87D0FC5871AAD0CA7548 /* Pods-Binary Calculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Binary Calculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFEF8231BD0B8DD097590C3921C50461 /* DDMathOperatorTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathOperatorTypes.h; path = DDMathParser/DDMathOperatorTypes.h; sourceTree = "<group>"; };
+		E0356FC6C3E8B25CEE0F3A717276068C /* NSString+DDMathParsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+DDMathParsing.m"; path = "DDMathParser/NSString+DDMathParsing.m"; sourceTree = "<group>"; };
+		E0446B34ACE7EAE5F5E689DD7363764F /* _DDNumberExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _DDNumberExpression.h; path = DDMathParser/_DDNumberExpression.h; sourceTree = "<group>"; };
+		E3375A8B898DB467E7B46E9AE3467F09 /* DDMathParserMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathParserMacros.h; path = DDMathParser/DDMathParserMacros.h; sourceTree = "<group>"; };
+		E5667A317D461EA383D640AA71D9207F /* libDDMathParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDDMathParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F6EAE08253595BDDFF35F41232B50B /* DDEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDEnumerator.h; path = DDMathParser/DDEnumerator.h; sourceTree = "<group>"; };
+		E6B7858A74D9D0CBC3384395C2A3A8FC /* _DDMathTermResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _DDMathTermResolver.m; path = DDMathParser/_DDMathTermResolver.m; sourceTree = "<group>"; };
+		E919B849F775BF61F460C789D6069520 /* DDMathOperator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathOperator.h; path = DDMathParser/DDMathOperator.h; sourceTree = "<group>"; };
+		E9DDF7114ECB3754CF09609F8E437060 /* Pods-Binary CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Binary CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ECACCCC8BB006F215928C4C94EC348A8 /* NSString+DDMathParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DDMathParsing.h"; path = "DDMathParser/NSString+DDMathParsing.h"; sourceTree = "<group>"; };
+		F0FFBF27B3153894BBE9963ACA7DD9B8 /* DDExpressionRewriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDExpressionRewriter.h; path = DDMathParser/DDExpressionRewriter.h; sourceTree = "<group>"; };
+		F63C2031D85D74E28E5F883994499630 /* DDMathTokenizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMathTokenizer.m; path = DDMathParser/DDMathTokenizer.m; sourceTree = "<group>"; };
+		F75121FBE43E60F419E3B47D6E6EAA84 /* DDTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTypes.h; path = DDMathParser/DDTypes.h; sourceTree = "<group>"; };
+		F8E07E41326B295A6437E5DAF84B2E26 /* DDMathTokenInterpreter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMathTokenInterpreter.h; path = DDMathParser/DDMathTokenInterpreter.h; sourceTree = "<group>"; };
+		F9C8C84A5F3F52DA4762000880FCA2B4 /* DDTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTypes.m; path = DDMathParser/DDTypes.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13CC10B6DBC176DA939195E88C216169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22359323E2582453B66B6DED7FE8F33 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5363455E9148B38269091C5F4EA53E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15657E8BAE0D45CAF0BA16777FC6F59E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BB3FD5B6C24DACAF7BA455B8C37AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5F590BB8F4BEA8E02B7A7C19F90C50 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED061B47DC11D653E9AACB4627F603EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F0878F8744229635F3801672A3251A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0074C1FB9F5852F030936ED8C5711894 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE0C2F47C48B8A576F85137C6895E9A1 /* Pods-Binary Calculator */,
+				3E2312DB1DFE8FF2141154629FA985CF /* Pods-Binary CalculatorTests */,
+				42CD858C1546146F39E51489E20A5FF7 /* Pods-Binary CalculatorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0DA5A44823B511AA2E4EF9355AB31714 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4EDDFFD8D569441812DA4A593576D /* DDMathParser.xcconfig */,
+				0A8B6C81EC0691F0B0E92749BD31F7FA /* DDMathParser-dummy.m */,
+				CB994A3E5AF3610E6BF7F65C467A75D5 /* DDMathParser-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDMathParser";
+			sourceTree = "<group>";
+		};
+		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		33EDA1D5811DBE498EDF3C3C08BCDC16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFAAA07A6F0F54BB5EF1F44A7053180B /* DDMathParser */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C17CEF104526ACA07B6EEE217EC43E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E2312DB1DFE8FF2141154629FA985CF /* Pods-Binary CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA5B9211A5E9BAC7B6E6ED1751E665 /* Pods-Binary CalculatorTests-acknowledgements.markdown */,
+				66978AE9DF6E794BB94876D48C371189 /* Pods-Binary CalculatorTests-acknowledgements.plist */,
+				CEFD30284C13A3731AAA82524F95AB63 /* Pods-Binary CalculatorTests-dummy.m */,
+				70FF79BDF4D8A565620ABD5D9D3A3BEF /* Pods-Binary CalculatorTests-frameworks.sh */,
+				BEA691C234D21878AAA2F406C7DF80E7 /* Pods-Binary CalculatorTests-resources.sh */,
+				2B04E35B5DCB52F52B7BE9D17D65A0A9 /* Pods-Binary CalculatorTests.debug.xcconfig */,
+				BEDDF94D7558C3E38CF7633FC6D56F8B /* Pods-Binary CalculatorTests.release.xcconfig */,
+			);
+			name = "Pods-Binary CalculatorTests";
+			path = "Target Support Files/Pods-Binary CalculatorTests";
+			sourceTree = "<group>";
+		};
+		42CD858C1546146F39E51489E20A5FF7 /* Pods-Binary CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				849FE66FB76A1AD23C0C30F15D7AD1E5 /* Pods-Binary CalculatorUITests-acknowledgements.markdown */,
+				88DE8D54400DECFF65A6A72F5B981800 /* Pods-Binary CalculatorUITests-acknowledgements.plist */,
+				2B13B8E7FE1C10410CD4CA62ED109068 /* Pods-Binary CalculatorUITests-dummy.m */,
+				52FDB6E92AB58DAE3CCDA0E5D947E10B /* Pods-Binary CalculatorUITests-frameworks.sh */,
+				C819A62D74843D24BDD4A848031FA39C /* Pods-Binary CalculatorUITests-resources.sh */,
+				61D1A7414C2D0B2CDE986810E53E9B3F /* Pods-Binary CalculatorUITests.debug.xcconfig */,
+				E9DDF7114ECB3754CF09609F8E437060 /* Pods-Binary CalculatorUITests.release.xcconfig */,
+			);
+			name = "Pods-Binary CalculatorUITests";
+			path = "Target Support Files/Pods-Binary CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				33EDA1D5811DBE498EDF3C3C08BCDC16 /* Pods */,
+				E2C0AE75407807084776CC6315481054 /* Products */,
+				0074C1FB9F5852F030936ED8C5711894 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AFAAA07A6F0F54BB5EF1F44A7053180B /* DDMathParser */ = {
+			isa = PBXGroup;
+			children = (
+				645537A8177B94985D41C51DA26070DF /* _DDDecimalFunctions.h */,
+				85259B99DE13BD538EECE66AA0C4A684 /* _DDDecimalFunctions.m */,
+				98869F5DD5910304493E37834A87E3E4 /* _DDFunctionEvaluator.h */,
+				6DB1770AFB63E24D45D112B74C4762F3 /* _DDFunctionEvaluator.m */,
+				45B3B25072659414330C364BA2FEA11F /* _DDFunctionExpression.h */,
+				BA96F879850653099918A5096C6057DC /* _DDFunctionExpression.m */,
+				29FE8EA9433D48548BEA9A3EF96E32A5 /* _DDMathTermResolver.h */,
+				E6B7858A74D9D0CBC3384395C2A3A8FC /* _DDMathTermResolver.m */,
+				E0446B34ACE7EAE5F5E689DD7363764F /* _DDNumberExpression.h */,
+				8E27E74F138318992737CA30360B7134 /* _DDNumberExpression.m */,
+				4FE1AE2E905BCEFA9AB91A5EC2A76F50 /* _DDParserTerm.h */,
+				CFFBB7E39D3DA98FC036E241595527A2 /* _DDParserTerm.m */,
+				AB7687DB7619BE97B8E89813673D573F /* _DDPrecisionFunctionEvaluator.h */,
+				573324F38B663C25B71CE68725D3B2FA /* _DDPrecisionFunctionEvaluator.m */,
+				A0F7455C4F98737177AD587D2159C5B1 /* _DDRewriteRule.h */,
+				D4FDF903AB8901CECB0E7A82CC2E6977 /* _DDRewriteRule.m */,
+				A57E274AEDB1F5476BDF71B0A894A037 /* _DDVariableExpression.h */,
+				0307B84D9EF5B5D67E1368534E9358FF /* _DDVariableExpression.m */,
+				E5F6EAE08253595BDDFF35F41232B50B /* DDEnumerator.h */,
+				CB80FC5D06DBFDE9F1A2B939005F9EFA /* DDEnumerator.m */,
+				B0A3E7A36066B81624979594370FBD15 /* DDExpression.h */,
+				A039203144F766366493DE4B32029A02 /* DDExpression.m */,
+				F0FFBF27B3153894BBE9963ACA7DD9B8 /* DDExpressionRewriter.h */,
+				6EF01D5E8AE4B9EA1D0ECF701B6771EA /* DDExpressionRewriter.m */,
+				93118CDA2ED5B585A99A46791CD923AF /* DDMathEvaluator.h */,
+				5D806B0167B04618DBEBED36E7D97744 /* DDMathEvaluator.m */,
+				1F6E44F418FD0B815BDD88DBFF80C5EF /* DDMathEvaluator+Private.h */,
+				E919B849F775BF61F460C789D6069520 /* DDMathOperator.h */,
+				5ACEB3CF44ACD68945D25E7342EFE774 /* DDMathOperator.m */,
+				A09F47E957D869E939A2AFC522B4AE9F /* DDMathOperatorSet.h */,
+				2D2313F88B9F41B15969ED19D6043562 /* DDMathOperatorSet.m */,
+				DFEF8231BD0B8DD097590C3921C50461 /* DDMathOperatorTypes.h */,
+				B19F9A95E2530E8E79B997AAC336954B /* DDMathOperatorTypes.m */,
+				13616C120EEDB715DE738DF43BCC4757 /* DDMathParser.h */,
+				E3375A8B898DB467E7B46E9AE3467F09 /* DDMathParserMacros.h */,
+				0E764133FA96A2873E39D231F5D4E931 /* DDMathToken.h */,
+				2A89A70C6E5C7462D7F574AEB5447A9E /* DDMathToken.m */,
+				F8E07E41326B295A6437E5DAF84B2E26 /* DDMathTokenInterpreter.h */,
+				B6BF931E74C7CB53B33DE113E51405FE /* DDMathTokenInterpreter.m */,
+				D1FE5280C5EC382FCC3295589FA5B4D5 /* DDMathTokenizer.h */,
+				F63C2031D85D74E28E5F883994499630 /* DDMathTokenizer.m */,
+				71129FD62746EEAB2621E7D899141B28 /* DDParser.h */,
+				55BF21AFDE10403AC0A8FC85E9D1E530 /* DDParser.m */,
+				F75121FBE43E60F419E3B47D6E6EAA84 /* DDTypes.h */,
+				F9C8C84A5F3F52DA4762000880FCA2B4 /* DDTypes.m */,
+				ECACCCC8BB006F215928C4C94EC348A8 /* NSString+DDMathParsing.h */,
+				E0356FC6C3E8B25CEE0F3A717276068C /* NSString+DDMathParsing.m */,
+				0DA5A44823B511AA2E4EF9355AB31714 /* Support Files */,
+			);
+			path = DDMathParser;
+			sourceTree = "<group>";
+		};
+		DE0C2F47C48B8A576F85137C6895E9A1 /* Pods-Binary Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DA73976EF46F87D0FC5871AAD0CA7548 /* Pods-Binary Calculator-acknowledgements.markdown */,
+				386971D0559DD9676F0B3E885FC8B842 /* Pods-Binary Calculator-acknowledgements.plist */,
+				579398CF101EABE1187DFEF7151370D5 /* Pods-Binary Calculator-dummy.m */,
+				8846555C8C810F06E81E81475D8A8372 /* Pods-Binary Calculator-frameworks.sh */,
+				5ACFCAD09FA300CD0F0A4344CCE2C479 /* Pods-Binary Calculator-resources.sh */,
+				1557BBAD4A78523C50D0B552B1C6DA24 /* Pods-Binary Calculator.debug.xcconfig */,
+				9A1665CC8AAD9188D1706F608AB247C3 /* Pods-Binary Calculator.release.xcconfig */,
+			);
+			name = "Pods-Binary Calculator";
+			path = "Target Support Files/Pods-Binary Calculator";
+			sourceTree = "<group>";
+		};
+		E2C0AE75407807084776CC6315481054 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5667A317D461EA383D640AA71D9207F /* libDDMathParser.a */,
+				0A5D63FD9C6B9EF2D65AFAE7990DE5AC /* libPods-Binary Calculator.a */,
+				B92AAEDB048A2C86C3A4862B425A9FAB /* libPods-Binary CalculatorTests.a */,
+				25641012061DFA65F0460A29D4C0234A /* libPods-Binary CalculatorUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E69DEBBE82624B36E5E3F9C2A3A7BE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1584D8ABF7A9E35BAAD51FEA0187778 /* _DDDecimalFunctions.h in Headers */,
+				D2F37935293CD9570767944AF4404738 /* _DDFunctionEvaluator.h in Headers */,
+				31C0124EA61904CB395C415E7B62A141 /* _DDFunctionExpression.h in Headers */,
+				F2433FC14F73DD3B36012DE08B547905 /* _DDMathTermResolver.h in Headers */,
+				647488A54FCFE335DA802979890E1EE4 /* _DDNumberExpression.h in Headers */,
+				F15EA8146B9437290B832CE435A0E3C5 /* _DDParserTerm.h in Headers */,
+				1A049A9C1B5C43AF48F7E98F59A2AD45 /* _DDPrecisionFunctionEvaluator.h in Headers */,
+				3F9E73A65D9E81DAF46A2AA37E0F8B90 /* _DDRewriteRule.h in Headers */,
+				8A5B3EDA6BB54ED942D65C05CCF932C9 /* _DDVariableExpression.h in Headers */,
+				DB5E6C7E0D7C2986D354C27D20B78A82 /* DDEnumerator.h in Headers */,
+				D0DBB60C6AE15B850408311CBB1C1FD3 /* DDExpression.h in Headers */,
+				F9FA84BC84D524BCF2F73B34A27BACCB /* DDExpressionRewriter.h in Headers */,
+				3E55D929D10A1532D2C27E5288F54AB2 /* DDMathEvaluator+Private.h in Headers */,
+				6768F9893372530C9B1E6E602994F813 /* DDMathEvaluator.h in Headers */,
+				FDC9961041B6322C4F4778FC78EDA6A9 /* DDMathOperator.h in Headers */,
+				76A9B068CFEA8B7B3854EDA36C257E05 /* DDMathOperatorSet.h in Headers */,
+				C76CCD422C5589E972D4D44BA760F490 /* DDMathOperatorTypes.h in Headers */,
+				8C7E990514327F743E26EBB4C4FCA0E5 /* DDMathParser.h in Headers */,
+				857CD15954586429C12A56EDBD8808EA /* DDMathParserMacros.h in Headers */,
+				801BDE5865CD4C9631D3FE64CCC27CDD /* DDMathToken.h in Headers */,
+				93D3904FCD2E5C996C7F45AEB13F12B3 /* DDMathTokenInterpreter.h in Headers */,
+				F0923449DA242DDB788AF28710D866A8 /* DDMathTokenizer.h in Headers */,
+				8C9899EBAF911296824295E822C4F3E5 /* DDParser.h in Headers */,
+				0C83D2133903A01A41C63F7464C452FD /* DDTypes.h in Headers */,
+				C9DFB937400F2374442654E06A9ED7D2 /* NSString+DDMathParsing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0CC42C694874D3D200E91BAC70802919 /* Pods-Binary CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A4C35C2BFABDF3060D0D3ADA893FA1 /* Build configuration list for PBXNativeTarget "Pods-Binary CalculatorTests" */;
+			buildPhases = (
+				4FF4C9FFE80F29B127EF9216A9CD80EE /* Sources */,
+				ED061B47DC11D653E9AACB4627F603EF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Binary CalculatorTests";
+			productName = "Pods-Binary CalculatorTests";
+			productReference = B92AAEDB048A2C86C3A4862B425A9FAB /* libPods-Binary CalculatorTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1444B4D540660DB410EFE9286356936D /* Pods-Binary Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FE298AFED23B33D6AB79C54A5C92C9 /* Build configuration list for PBXNativeTarget "Pods-Binary Calculator" */;
+			buildPhases = (
+				CA219BD4982C18641D9AB2B6E60AF787 /* Sources */,
+				65BB3FD5B6C24DACAF7BA455B8C37AA1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2222F867F70F39A15F1ED13FF9EB201 /* PBXTargetDependency */,
+			);
+			name = "Pods-Binary Calculator";
+			productName = "Pods-Binary Calculator";
+			productReference = 0A5D63FD9C6B9EF2D65AFAE7990DE5AC /* libPods-Binary Calculator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		271064FBA25E6F715A2F129B0BBAD9A4 /* Pods-Binary CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F6DFCCA754684A4B126D1DD8D243179 /* Build configuration list for PBXNativeTarget "Pods-Binary CalculatorUITests" */;
+			buildPhases = (
+				C1FD0A47D8D15B191A973C51487D80DA /* Sources */,
+				13CC10B6DBC176DA939195E88C216169 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Binary CalculatorUITests";
+			productName = "Pods-Binary CalculatorUITests";
+			productReference = 25641012061DFA65F0460A29D4C0234A /* libPods-Binary CalculatorUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B562B0A8A59571B9D98EA61DE2812DDA /* DDMathParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7278CE92C31448F830E9064CB3271E02 /* Build configuration list for PBXNativeTarget "DDMathParser" */;
+			buildPhases = (
+				AC5A87A94E6CAEC28FB1C905AEB67980 /* Sources */,
+				5363455E9148B38269091C5F4EA53E0B /* Frameworks */,
+				5E69DEBBE82624B36E5E3F9C2A3A7BE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDMathParser;
+			productName = DDMathParser;
+			productReference = E5667A317D461EA383D640AA71D9207F /* libDDMathParser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E2C0AE75407807084776CC6315481054 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B562B0A8A59571B9D98EA61DE2812DDA /* DDMathParser */,
+				1444B4D540660DB410EFE9286356936D /* Pods-Binary Calculator */,
+				0CC42C694874D3D200E91BAC70802919 /* Pods-Binary CalculatorTests */,
+				271064FBA25E6F715A2F129B0BBAD9A4 /* Pods-Binary CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FF4C9FFE80F29B127EF9216A9CD80EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A75B2EA97CC43E90DA10E73DD66B277 /* Pods-Binary CalculatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A87A94E6CAEC28FB1C905AEB67980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE72144EA16F4965C1184D289C23C48 /* _DDDecimalFunctions.m in Sources */,
+				68CE1EF997852FF9EC9F89FE9C87EC78 /* _DDFunctionEvaluator.m in Sources */,
+				D6AEF1D5E65C59D8FA97D40DD30158AA /* _DDFunctionExpression.m in Sources */,
+				760CE5500BE3737F8D1DD2241262B6AF /* _DDMathTermResolver.m in Sources */,
+				C8FF0D07EAA344B828C34B2B4232B8A7 /* _DDNumberExpression.m in Sources */,
+				77C41A7185723B8AA8E3826B8C267438 /* _DDParserTerm.m in Sources */,
+				21A94B122C18F183E8BDC5FD1A995771 /* _DDPrecisionFunctionEvaluator.m in Sources */,
+				F2E31532107365C42456D986C76057C6 /* _DDRewriteRule.m in Sources */,
+				19BF15C040EF367A9869B6665467F354 /* _DDVariableExpression.m in Sources */,
+				E43B7DA1A8D6A3C4CA9D08473F3C8578 /* DDEnumerator.m in Sources */,
+				2D40F4306D557BF7A32D59CAC738EA49 /* DDExpression.m in Sources */,
+				D8B5AA80F6A8B41C0F5CF5EE5C90CE00 /* DDExpressionRewriter.m in Sources */,
+				B052B5521883A6B2BEDE060290CF7063 /* DDMathEvaluator.m in Sources */,
+				0E7B32A41E58372A7D0195E130FC02B5 /* DDMathOperator.m in Sources */,
+				75ED5DA1E80B99645DED55F968D5393E /* DDMathOperatorSet.m in Sources */,
+				6DD41EF44B456A5CD5402243A9076874 /* DDMathOperatorTypes.m in Sources */,
+				9B5B681BE777463B803FE1C2372A419D /* DDMathParser-dummy.m in Sources */,
+				362A6726AC58A4170F9CFA6401FBC148 /* DDMathToken.m in Sources */,
+				82EF3C6EB15C9A83CFD48D12900AD0B3 /* DDMathTokenInterpreter.m in Sources */,
+				7220A0C599F706E3C46B5C6EA84FA048 /* DDMathTokenizer.m in Sources */,
+				11D36D91CC8CC7EBA0E8DA5E2161E35D /* DDParser.m in Sources */,
+				785EB2B7904ACEBFC48C14B05E10926A /* DDTypes.m in Sources */,
+				D5F84ED3EC850A1B9E842261B922E458 /* NSString+DDMathParsing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FD0A47D8D15B191A973C51487D80DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8945D15210725DA43B755F7E94B6CE68 /* Pods-Binary CalculatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA219BD4982C18641D9AB2B6E60AF787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD129EB9C8672BEB8F0D2BC09FFAE52 /* Pods-Binary Calculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2222F867F70F39A15F1ED13FF9EB201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDMathParser;
+			target = B562B0A8A59571B9D98EA61DE2812DDA /* DDMathParser */;
+			targetProxy = C1B0E5110841EC0E559ECE37D7EF3FDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1F33ABA9CB7038AABE3E50D81BB492F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1557BBAD4A78523C50D0B552B1C6DA24 /* Pods-Binary Calculator.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		21781345BFA7861FAB5D93FA34070274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DDF7114ECB3754CF09609F8E437060 /* Pods-Binary CalculatorUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3AC4359F167BB076755387CDF5D18DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC4EDDFFD8D569441812DA4A593576D /* DDMathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DDMathParser/DDMathParser-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84283367895EFB994EE254B454C5F6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC4EDDFFD8D569441812DA4A593576D /* DDMathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DDMathParser/DDMathParser-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C1FEFD063553D138D23167C9810B40B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B04E35B5DCB52F52B7BE9D17D65A0A9 /* Pods-Binary CalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EAC8AE8846BE9E81A4533CF6D228481B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDDF94D7558C3E38CF7633FC6D56F8B /* Pods-Binary CalculatorTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6B562EFB6B4F52741C89483AFFDBEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1665CC8AAD9188D1706F608AB247C3 /* Pods-Binary Calculator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FAB16004A3A3C758A1B945637B56D253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D1A7414C2D0B2CDE986810E53E9B3F /* Pods-Binary CalculatorUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
+				578820E498FFD85CA5D93A33D365FBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58A4C35C2BFABDF3060D0D3ADA893FA1 /* Build configuration list for PBXNativeTarget "Pods-Binary CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1FEFD063553D138D23167C9810B40B2 /* Debug */,
+				EAC8AE8846BE9E81A4533CF6D228481B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71FE298AFED23B33D6AB79C54A5C92C9 /* Build configuration list for PBXNativeTarget "Pods-Binary Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F33ABA9CB7038AABE3E50D81BB492F0 /* Debug */,
+				F6B562EFB6B4F52741C89483AFFDBEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7278CE92C31448F830E9064CB3271E02 /* Build configuration list for PBXNativeTarget "DDMathParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84283367895EFB994EE254B454C5F6D8 /* Debug */,
+				3AC4359F167BB076755387CDF5D18DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F6DFCCA754684A4B126D1DD8D243179 /* Build configuration list for PBXNativeTarget "Pods-Binary CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB16004A3A3C758A1B945637B56D253 /* Debug */,
+				21781345BFA7861FAB5D93FA34070274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

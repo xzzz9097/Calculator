@@ -1,0 +1,27 @@
+{
+  "name": "DDMathParser",
+  "version": "1.1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "summary": "String → Number",
+  "description": "An extensible and flexible library to parse a string\nas a mathematical expression and evaluate it.",
+  "homepage": "https://github.com/davedelong/DDMathParser",
+  "social_media_url": "https://twitter.com/davedelong",
+  "authors": {
+    "Dave DeLong": "me@davedelong.com"
+  },
+  "source": {
+    "git": "https://github.com/xzzz9097/DDMathParser.git",
+    "tag": "1.1"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.9",
+    "watchos": "2.0"
+  },
+  "source_files": "DDMathParser/*.{h,m}",
+  "requires_arc": true,
+  "module_name": "DDMathParser"
+}

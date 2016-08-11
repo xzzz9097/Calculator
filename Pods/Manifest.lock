@@ -1,0 +1,21 @@
+PODS:
+  - DDMathParser (1.1)
+
+DEPENDENCIES:
+  - DDMathParser (from `https://github.com/xzzz9097/DDMathParser.git`)
+
+EXTERNAL SOURCES:
+  DDMathParser:
+    :git: https://github.com/xzzz9097/DDMathParser.git
+
+CHECKOUT OPTIONS:
+  DDMathParser:
+    :commit: 5a57ccbef95fd879d1e17112d1344df83c3104e9
+    :git: https://github.com/xzzz9097/DDMathParser.git
+
+SPEC CHECKSUMS:
+  DDMathParser: f1605fd192486940d3781d575f3fd8c8d884f0e8
+
+PODFILE CHECKSUM: e1a731437773fbfd4c98f7becf9337ce23766ef8
+
+COCOAPODS: 1.0.1

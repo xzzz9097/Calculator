@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DDMathParser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Binary Calculator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Binary CalculatorTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Binary CalculatorUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0CC42C694874D3D200E91BAC70802919</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1444B4D540660DB410EFE9286356936D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>271064FBA25E6F715A2F129B0BBAD9A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B562B0A8A59571B9D98EA61DE2812DDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
