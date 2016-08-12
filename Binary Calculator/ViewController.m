@@ -28,7 +28,7 @@
 - (IBAction)onComputeClicked:(id)sender {
     @try {
         // Parse expression
-        NSNumber* mResult = [[inputField stringValue] numberByEvaluatingString];
+        NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
 
         // Set string
         [resultField setStringValue:[mResult stringValue]];
