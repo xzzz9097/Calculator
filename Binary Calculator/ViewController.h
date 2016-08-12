@@ -15,6 +15,8 @@
 @property (weak) IBOutlet NSTextField *resultField;
 
 - (IBAction)onComputeClicked:(id)sender;
+- (void)compute;
+- (void)controlTextDidChange:(NSNotification *)obj;
 
 @end
 

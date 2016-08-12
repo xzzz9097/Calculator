@@ -26,6 +26,10 @@
 }
 
 - (IBAction)onComputeClicked:(id)sender {
+    [self compute];
+}
+
+- (void)compute {
     @try {
         // Parse expression
         NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
@@ -34,8 +38,12 @@
         [resultField setStringValue:[mResult stringValue]];
     } @catch (NSException *exception) {
         // Print an error message
-        [resultField setStringValue:@"Error"];
+        [resultField setStringValue:@"..."];
     }
+}
+
+- (void)controlTextDidChange:(NSNotification *)obj {
+    [self compute];
 }
 
 @end
