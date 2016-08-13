@@ -35,7 +35,9 @@
         NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
 
         // Set string
-        [resultField setStringValue:[mResult stringValue]];
+        if (mResult) {
+            [resultField setStringValue:[mResult stringValue]];
+        }
     } @catch (NSException *exception) {
         // Print an error message
         [resultField setStringValue:@"..."];
