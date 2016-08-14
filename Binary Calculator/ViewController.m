@@ -30,16 +30,13 @@
 }
 
 - (void)compute {
-    @try {
-        // Parse expression
-        NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
-
-        // Set string
-        if (mResult) {
-            [resultField setStringValue:[mResult stringValue]];
-        }
-    } @catch (NSException *exception) {
-        // Print an error message
+    // Parse expression
+    NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
+    
+    // Set string
+    if (mResult) {
+        [resultField setStringValue:[mResult stringValue]];
+    } else {
         [resultField setStringValue:@"..."];
     }
 }
