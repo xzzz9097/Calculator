@@ -25,10 +25,6 @@
     // Update the view, if already loaded.
 }
 
-- (IBAction)onComputeClicked:(id)sender {
-    [self compute];
-}
-
 - (void)compute {
     // Parse expression
     NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
