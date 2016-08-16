@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -670,38 +671,51 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="473" height="142"/>
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="82"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFP-OD-OOs">
-                                <rect key="frame" x="290" y="47" width="150" height="48"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Result" drawsBackground="YES" id="wo4-M9-6ZH">
-                                    <font key="font" metaFont="system" size="40"/>
-                                    <color key="textColor" red="0.44870746073298429" green="0.44870746073298429" blue="0.44870746073298429" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-cV-ZlR">
-                                <rect key="frame" x="33" y="47" width="249" height="48"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Expression" drawsBackground="YES" id="PmE-f3-U0j">
-                                    <font key="font" metaFont="system" size="40"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
-                                </textFieldCell>
-                                <connections>
-                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="pAc-sC-kpI"/>
-                                </connections>
-                            </textField>
+                            <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-6a-tvC">
+                                <rect key="frame" x="24" y="13" width="449" height="39"/>
+                                <subviews>
+                                    <textField focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooa-UX-G8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="39"/>
+                                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Expression" drawsBackground="YES" id="n4G-hV-GLV">
+                                            <font key="font" metaFont="systemLight" size="32"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <outlet property="delegate" destination="XfG-lQ-9wD" id="xYW-Od-PsG"/>
+                                        </connections>
+                                    </textField>
+                                    <textField focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-Jz-VOF">
+                                        <rect key="frame" x="359" y="0.0" width="90" height="39"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Result" drawsBackground="YES" id="wY5-1T-jxa">
+                                            <font key="font" metaFont="systemLight" size="32"/>
+                                            <color key="textColor" red="0.4487074607" green="0.4487074607" blue="0.4487074607" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <real value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="inputField" destination="ClB-cV-ZlR" id="Ug9-86-FW9"/>
-                        <outlet property="resultField" destination="dFP-OD-OOs" id="DPi-LX-s0S"/>
+                        <outlet property="inputField" destination="ooa-UX-G8f" id="TfA-7j-emu"/>
+                        <outlet property="resultField" destination="Wr9-Jz-VOF" id="V5y-bB-ZWK"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71.5" y="591"/>
+            <point key="canvasLocation" x="83" y="561"/>
         </scene>
     </scenes>
 </document>
