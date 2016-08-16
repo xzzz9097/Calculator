@@ -6,9 +6,9 @@
 //  Copyright © 2016 Edge Apps. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CalculatorViewController.h"
 
-@implementation ViewController
+@implementation CalculatorViewController
 
 @synthesize inputField;
 @synthesize resultField;

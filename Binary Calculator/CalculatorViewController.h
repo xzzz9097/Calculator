@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <DDMathParser.h>
 
-@interface ViewController : NSViewController
+@interface CalculatorViewController : NSViewController
 
 @property (weak) IBOutlet NSTextField *inputField;
 @property (weak) IBOutlet NSTextField *resultField;

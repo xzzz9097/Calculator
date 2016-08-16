@@ -10,7 +10,7 @@
 		0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E7541D5E459000AD29A9 /* WindowController.m */; };
 		0CFE13361C77836A0005549D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13351C77836A0005549D /* AppDelegate.m */; };
 		0CFE13391C77836A0005549D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13381C77836A0005549D /* main.m */; };
-		0CFE133C1C77836A0005549D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE133B1C77836A0005549D /* ViewController.m */; };
+		0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE133B1C77836A0005549D /* CalculatorViewController.m */; };
 		0CFE133F1C77836A0005549D /* Binary_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE133D1C77836A0005549D /* Binary_Calculator.xcdatamodeld */; };
 		0CFE13411C77836A0005549D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFE13401C77836A0005549D /* Assets.xcassets */; };
 		0CFE13441C77836A0005549D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFE13421C77836A0005549D /* Main.storyboard */; };
@@ -47,8 +47,8 @@
 		0CFE13341C77836A0005549D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CFE13351C77836A0005549D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0CFE13381C77836A0005549D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0CFE133A1C77836A0005549D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0CFE133B1C77836A0005549D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0CFE133A1C77836A0005549D /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		0CFE133B1C77836A0005549D /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		0CFE133E1C77836A0005549D /* Binary_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Binary_Calculator.xcdatamodel; sourceTree = "<group>"; };
 		0CFE13401C77836A0005549D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CFE13431C77836A0005549D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 			children = (
 				0CFE13341C77836A0005549D /* AppDelegate.h */,
 				0CFE13351C77836A0005549D /* AppDelegate.m */,
-				0CFE133A1C77836A0005549D /* ViewController.h */,
-				0CFE133B1C77836A0005549D /* ViewController.m */,
+				0CFE133A1C77836A0005549D /* CalculatorViewController.h */,
+				0CFE133B1C77836A0005549D /* CalculatorViewController.m */,
 				0CA8E7531D5E459000AD29A9 /* WindowController.h */,
 				0CA8E7541D5E459000AD29A9 /* WindowController.m */,
 				0CFE13401C77836A0005549D /* Assets.xcassets */,
@@ -447,7 +447,7 @@
 			files = (
 				0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */,
 				0CFE133F1C77836A0005549D /* Binary_Calculator.xcdatamodeld in Sources */,
-				0CFE133C1C77836A0005549D /* ViewController.m in Sources */,
+				0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */,
 				0CFE13391C77836A0005549D /* main.m in Sources */,
 				0CFE13361C77836A0005549D /* AppDelegate.m in Sources */,
 			);
