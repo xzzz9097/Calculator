@@ -671,15 +671,15 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="496" height="82"/>
+                        <rect key="frame" x="0.0" y="0.0" width="557" height="81"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-6a-tvC">
-                                <rect key="frame" x="24" y="13" width="449" height="39"/>
+                            <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-6a-tvC">
+                                <rect key="frame" x="24" y="12" width="509" height="39"/>
                                 <subviews>
-                                    <textField focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooa-UX-G8f">
-                                        <rect key="frame" x="0.0" y="0.0" width="351" height="39"/>
-                                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Expression" drawsBackground="YES" id="n4G-hV-GLV">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ooa-UX-G8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="411" height="39"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Expression" drawsBackground="YES" id="n4G-hV-GLV">
                                             <font key="font" metaFont="systemLight" size="32"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
@@ -688,8 +688,8 @@
                                             <outlet property="delegate" destination="XfG-lQ-9wD" id="xYW-Od-PsG"/>
                                         </connections>
                                     </textField>
-                                    <textField focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-Jz-VOF">
-                                        <rect key="frame" x="359" y="0.0" width="90" height="39"/>
+                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-Jz-VOF">
+                                        <rect key="frame" x="419" y="0.0" width="90" height="39"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Result" drawsBackground="YES" id="wY5-1T-jxa">
                                             <font key="font" metaFont="systemLight" size="32"/>
                                             <color key="textColor" red="0.4487074607" green="0.4487074607" blue="0.4487074607" alpha="1" colorSpace="calibratedRGB"/>
@@ -707,6 +707,10 @@
                                 </customSpacing>
                             </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LXZ-6a-tvC" secondAttribute="trailing" constant="24" id="lz8-nt-VPa"/>
+                            <constraint firstItem="LXZ-6a-tvC" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="24" id="zBi-0r-kTH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="inputField" destination="ooa-UX-G8f" id="TfA-7j-emu"/>
@@ -715,7 +719,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="561"/>
+            <point key="canvasLocation" x="113.5" y="560.5"/>
         </scene>
     </scenes>
 </document>
