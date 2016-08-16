@@ -40,6 +40,7 @@
 - (NSString *)formatResult:(NSNumber *)rawResult withPrecision:(uint8_t)precision {
     NSNumberFormatter *mFormatter = [[NSNumberFormatter alloc] init];
 
+    [mFormatter setMinimumIntegerDigits:1];
     [mFormatter setMaximumFractionDigits:precision];
 
     return [mFormatter stringFromNumber:rawResult];
