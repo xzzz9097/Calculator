@@ -31,10 +31,18 @@
     
     // Set string
     if (mResult) {
-        [resultField setStringValue:[mResult stringValue]];
+        [resultField setStringValue:[self formatResult:mResult withPrecision:5]];
     } else {
         [resultField setStringValue:@"..."];
     }
+}
+
+- (NSString *)formatResult:(NSNumber *)rawResult withPrecision:(uint8_t)precision {
+    NSNumberFormatter *mFormatter = [[NSNumberFormatter alloc] init];
+
+    [mFormatter setMaximumFractionDigits:precision];
+
+    return [mFormatter stringFromNumber:rawResult];
 }
 
 - (void)controlTextDidChange:(NSNotification *)obj {

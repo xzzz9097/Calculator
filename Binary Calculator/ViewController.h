@@ -15,6 +15,7 @@
 @property (weak) IBOutlet NSTextField *resultField;
 
 - (void)compute;
+- (NSString *)formatResult:(NSNumber *)rawResult withPrecision:(uint8_t)precision;
 - (void)controlTextDidChange:(NSNotification *)obj;
 
 @end
