@@ -26,8 +26,11 @@
 }
 
 - (void)compute {
+    // Initialize math evaluator
+    DDMathEvaluator *mMathEvaluator = [DDMathEvaluator defaultMathEvaluator];
+
     // Parse expression
-    NSNumber *mResult = [[inputField stringValue] numberByEvaluatingString];
+    NSNumber *mResult = [mMathEvaluator evaluateString:[inputField stringValue] withSubstitutions:nil];
     
     // Set string
     if (mResult) {
