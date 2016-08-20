@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import <DDMathEvaluator.h>
+#import "ParserFrontend.h"
 
-@interface CalculatorViewController : NSViewController
+@interface CalculatorViewController : NSViewController {
+    ParserFrontend *_parserFrontEnd;
+}
 
 @property (weak) IBOutlet NSTextField *inputField;
 @property (weak) IBOutlet NSTextField *resultField;

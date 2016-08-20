@@ -17,6 +17,7 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    _parserFrontEnd = [[ParserFrontend alloc] initWithMathEvaluator:[DDMathEvaluator defaultMathEvaluator]];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -26,17 +27,18 @@
 }
 
 - (void)compute {
-    // Initialize math evaluator
-    DDMathEvaluator *mMathEvaluator = [DDMathEvaluator defaultMathEvaluator];
-
     // Parse expression
-    NSNumber *mResult = [mMathEvaluator evaluateString:[inputField stringValue] withSubstitutions:nil];
-    
-    // Set string
-    if (mResult) {
-        [resultField setStringValue:[self formatResult:mResult withPrecision:5]];
-    } else {
-        [resultField setStringValue:@"..."];
+    if (_parserFrontEnd) {
+        [_parserFrontEnd setInputString:[inputField stringValue]];
+        
+        NSNumber *_result = [_parserFrontEnd computeResult];
+        
+        // Set string
+        if (_result) {
+            [resultField setStringValue:[self formatResult:_result withPrecision:5]];
+        } else {
+            [resultField setStringValue:@"..."];
+        }
     }
 }
 
