@@ -29,7 +29,7 @@
 - (void)compute {
     // Parse expression
     if (_parserFrontEnd) {
-        [_parserFrontEnd setInputString:[inputField stringValue]];
+        [_parserFrontEnd setInputString:[inputField attributedStringValue]];
         
         NSNumber *_result = [_parserFrontEnd computeResult];
         
@@ -53,6 +53,9 @@
 
 - (void)controlTextDidChange:(NSNotification *)obj {
     [self compute];
+
+    [_parserFrontEnd formatInput];
+    [inputField setAttributedStringValue:[_parserFrontEnd inputString]];
 }
 
 @end

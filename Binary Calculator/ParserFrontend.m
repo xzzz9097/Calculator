@@ -12,12 +12,13 @@
 
 @synthesize inputString = _inputString;
 
-- (id)initWithMathEvalator:(DDMathEvaluator *)mathEvaluator withInputValue:(NSString *)textInputValue {
+- (id)initWithMathEvalator:(DDMathEvaluator *)mathEvaluator withInputValue:(NSAttributedString *)textInputValue {
     self = [super init];
     
     if (self) {
         _mathEvaluator = mathEvaluator;
         _inputString = textInputValue;
+        _inputFormatter = [[InputFormatter alloc] initWithRegisteredFunctions:[_mathEvaluator registeredFunctions]];
     }
     
     return self;
@@ -28,11 +29,15 @@
 }
 
 - (NSNumber*)computeResultWithSubstitutions:(NSDictionary *)substitutions {
-    return [_mathEvaluator evaluateString:_inputString withSubstitutions:substitutions];
+    return [_mathEvaluator evaluateString:[_inputString string] withSubstitutions:substitutions];
 }
 
 - (NSNumber*)computeResult {
     return [self computeResultWithSubstitutions:nil];
+}
+
+- (void)formatInput {
+    _inputString = [_inputFormatter formatInputString:_inputString];
 }
 
 @end
