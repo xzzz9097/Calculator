@@ -10,12 +10,10 @@
 #import <DDMathEvaluator.h>
 #import "InputFormatter.h"
 
-@interface ParserFrontend : NSObject {
-    DDMathEvaluator *_mathEvaluator;
-    InputFormatter *_inputFormatter;
-}
+@interface ParserFrontend : NSObject
 
 @property (nonatomic) NSAttributedString *inputString;
+@property (nonatomic) DDMathEvaluator *mathEvaluator;
 
 - (id)initWithMathEvalator:(DDMathEvaluator *)mathEvaluator withInputValue:(NSMutableAttributedString *)textInputValue;
 - (id)initWithMathEvaluator:(DDMathEvaluator *)mathEvaluator;

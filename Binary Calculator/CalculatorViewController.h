@@ -10,9 +10,7 @@
 #import <DDMathEvaluator.h>
 #import "ParserFrontend.h"
 
-@interface CalculatorViewController : NSViewController {
-    ParserFrontend *_parserFrontEnd;
-}
+@interface CalculatorViewController : NSViewController
 
 @property (weak) IBOutlet NSTextField *inputField;
 @property (weak) IBOutlet NSTextField *resultField;

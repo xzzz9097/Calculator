@@ -8,7 +8,9 @@
 
 #import "CalculatorViewController.h"
 
-@implementation CalculatorViewController
+@implementation CalculatorViewController {
+    ParserFrontend *_parserFrontend;
+}
 
 @synthesize inputField;
 @synthesize resultField;
@@ -17,7 +19,7 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    _parserFrontEnd = [[ParserFrontend alloc] initWithMathEvaluator:[DDMathEvaluator defaultMathEvaluator]];
+    _parserFrontend = [[ParserFrontend alloc] initWithMathEvaluator:[DDMathEvaluator defaultMathEvaluator]];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -28,10 +30,10 @@
 
 - (void)compute {
     // Parse expression
-    if (_parserFrontEnd) {
-        [_parserFrontEnd setInputString:[inputField attributedStringValue]];
+    if (_parserFrontend) {
+        [_parserFrontend setInputString:[inputField attributedStringValue]];
         
-        NSNumber *_result = [_parserFrontEnd computeResult];
+        NSNumber *_result = [_parserFrontend computeResult];
         
         // Set string
         if (_result) {
@@ -54,8 +56,8 @@
 - (void)controlTextDidChange:(NSNotification *)obj {
     [self compute];
 
-    [_parserFrontEnd formatInput];
-    [inputField setAttributedStringValue:[_parserFrontEnd inputString]];
+    [_parserFrontend formatInput];
+    [inputField setAttributedStringValue:[_parserFrontend inputString]];
 }
 
 @end

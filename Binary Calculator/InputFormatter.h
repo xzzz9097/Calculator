@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
-@interface InputFormatter : NSObject {
-    NSString *_registeredFunctions;
-}
+@interface InputFormatter : NSObject
+
+@property (nonatomic) NSString *registeredFunctions;
 
 - (id)initWithRegisteredFunctions:(NSArray *)registeredFunctions;
 - (NSMutableAttributedString *)formatInputString:(NSAttributedString *)inputString;

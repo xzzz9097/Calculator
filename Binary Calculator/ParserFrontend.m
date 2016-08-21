@@ -8,7 +8,9 @@
 
 #import "ParserFrontend.h"
 
-@implementation ParserFrontend
+@implementation ParserFrontend {
+    InputFormatter *_inputFormatter;
+}
 
 @synthesize inputString = _inputString;
 
