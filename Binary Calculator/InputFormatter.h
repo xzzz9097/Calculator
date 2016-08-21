@@ -12,10 +12,13 @@
 @interface InputFormatter : NSObject
 
 @property (nonatomic) NSString *registeredFunctions;
+@property (nonatomic) id originalStringAttributes;
 
 - (id)initWithRegisteredFunctions:(NSArray *)registeredFunctions;
 - (NSMutableAttributedString *)formatInputString:(NSAttributedString *)inputString;
 - (void)applyItalicStyle:(NSMutableAttributedString *)formattedString range:(NSRange)range;
+- (void)saveOriginalStyle:(NSAttributedString *)originalString;
+- (void)restoreOriginalStyle:(NSMutableAttributedString *)formattedString range:(NSRange)range;
 - (NSString *)buildRegularExpressionWithFunctionsArray:(NSArray *)functionsArray;
 
 @end
