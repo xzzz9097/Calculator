@@ -36,9 +36,7 @@
 }
 
 - (void)applyItalicStyle:(NSMutableAttributedString *)formattedString range:(NSRange)range {
-    [formattedString beginEditing];
     [formattedString applyFontTraits:NSItalicFontMask range:range];
-    [formattedString endEditing];
 }
 
 - (NSString *)buildRegularExpressionWithFunctionsArray:(NSArray *)functionsArray {
