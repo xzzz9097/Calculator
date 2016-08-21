@@ -12,9 +12,6 @@
     ParserFrontend *_parserFrontend;
 }
 
-@synthesize inputField;
-@synthesize resultField;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -31,15 +28,15 @@
 - (void)compute {
     // Parse expression
     if (_parserFrontend) {
-        [_parserFrontend setInputString:[inputField attributedStringValue]];
+        [_parserFrontend setInputString:[_inputField attributedStringValue]];
         
         NSNumber *_result = [_parserFrontend computeResult];
         
         // Set string
         if (_result) {
-            [resultField setStringValue:[self formatResult:_result withPrecision:5]];
+            [_resultField setStringValue:[self formatResult:_result withPrecision:5]];
         } else {
-            [resultField setStringValue:@"..."];
+            [_resultField setStringValue:@"..."];
         }
     }
 }
@@ -57,7 +54,7 @@
     [self compute];
 
     [_parserFrontend formatInput];
-    [inputField setAttributedStringValue:[_parserFrontend inputString]];
+    [_inputField setAttributedStringValue:[_parserFrontend inputString]];
 }
 
 @end

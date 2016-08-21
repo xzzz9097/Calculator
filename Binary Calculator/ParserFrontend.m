@@ -12,8 +12,6 @@
     InputFormatter *_inputFormatter;
 }
 
-@synthesize inputString = _inputString;
-
 - (id)initWithMathEvalator:(DDMathEvaluator *)mathEvaluator withInputValue:(NSAttributedString *)textInputValue {
     self = [super init];
     
