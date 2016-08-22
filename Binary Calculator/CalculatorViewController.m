@@ -35,6 +35,8 @@
         // Set string
         if (_result) {
             [_resultField setStringValue:[self formatResult:_result withPrecision:5]];
+        } else if ([[_inputField stringValue] length] == 0){
+            [_resultField setStringValue:@""];
         } else {
             [_resultField setStringValue:@"..."];
         }
