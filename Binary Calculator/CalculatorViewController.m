@@ -16,7 +16,7 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    _parserFrontend = [[ParserFrontend alloc] initWithMathEvaluator:[DDMathEvaluator defaultMathEvaluator]];
+    _parserFrontend = [ParserFrontend defaultParserFrontend];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

@@ -12,11 +12,11 @@
     InputFormatter *_inputFormatter;
 }
 
-- (id)initWithMathEvalator:(DDMathEvaluator *)mathEvaluator withInputValue:(NSAttributedString *)textInputValue {
+- (id)initWithInputValue:(NSAttributedString *)textInputValue {
     self = [super init];
     
     if (self) {
-        _mathEvaluator = mathEvaluator;
+        _mathEvaluator = [DDMathEvaluator defaultMathEvaluator];
         _inputString = textInputValue;
         _inputFormatter = [[InputFormatter alloc] initWithRegisteredFunctions:[_mathEvaluator registeredFunctions]];
     }
@@ -24,8 +24,8 @@
     return self;
 }
 
-- (id)initWithMathEvaluator:(DDMathEvaluator *)mathEvaluator {
-    return [self initWithMathEvalator:mathEvaluator withInputValue:nil];
++ (instancetype)defaultParserFrontend {
+    return [[self alloc] initWithInputValue:nil];
 }
 
 - (NSNumber*)computeResultWithSubstitutions:(NSDictionary *)substitutions {

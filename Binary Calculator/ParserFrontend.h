@@ -15,8 +15,8 @@
 @property (nonatomic) NSAttributedString *inputString;
 @property (nonatomic) DDMathEvaluator *mathEvaluator;
 
-- (id)initWithMathEvalator:(DDMathEvaluator *)mathEvaluator withInputValue:(NSMutableAttributedString *)textInputValue;
-- (id)initWithMathEvaluator:(DDMathEvaluator *)mathEvaluator;
+- (id)initWithInputValue:(NSMutableAttributedString *)textInputValue;
++ (instancetype)defaultParserFrontend;
 - (NSNumber*)computeResultWithSubstitutions:(NSDictionary*)substitutions;
 - (NSNumber*)computeResult;
 - (void)formatInput;

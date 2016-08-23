@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <DDMathEvaluator.h>
 #import "ParserFrontend.h"
 
 @interface CalculatorViewController : NSViewController
