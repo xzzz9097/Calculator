@@ -10,6 +10,7 @@
 
 @implementation ParserFrontend {
     InputFormatter *_inputFormatter;
+    OutputFormatter *_outputFormatter;
 }
 
 - (id)initWithInputValue:(NSAttributedString *)textInputValue {
@@ -19,6 +20,7 @@
         _mathEvaluator = [DDMathEvaluator defaultMathEvaluator];
         _inputString = textInputValue;
         _inputFormatter = [[InputFormatter alloc] initWithRegisteredFunctions:[_mathEvaluator registeredFunctions]];
+        _outputFormatter = [[OutputFormatter alloc] initWithPrecision:5];
     }
     
     return self;
@@ -34,6 +36,14 @@
 
 - (NSNumber*)computeResult {
     return [self computeResultWithSubstitutions:nil];
+}
+
+- (NSString*)formattedResultWithSubstitutions:(NSDictionary *)substitutions {
+    return [_outputFormatter stringFromNumber:[self computeResultWithSubstitutions:substitutions]];
+}
+
+- (NSString*)formattedResult {
+    return [self formattedResultWithSubstitutions:nil];
 }
 
 - (void)formatInput {

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <DDMathEvaluator.h>
 #import "InputFormatter.h"
+#import "OutputFormatter.h"
 
 @interface ParserFrontend : NSObject
 
@@ -19,6 +20,8 @@
 + (instancetype)defaultParserFrontend;
 - (NSNumber*)computeResultWithSubstitutions:(NSDictionary*)substitutions;
 - (NSNumber*)computeResult;
+- (NSString*)formattedResultWithSubstitutions:(NSDictionary*)substitutions;
+- (NSString*)formattedResult;
 - (void)formatInput;
 
 @end

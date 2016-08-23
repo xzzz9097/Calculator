@@ -30,26 +30,17 @@
     if (_parserFrontend) {
         [_parserFrontend setInputString:[_inputField attributedStringValue]];
         
-        NSNumber *_result = [_parserFrontend computeResult];
+        NSString *_formattedResult = [_parserFrontend formattedResult];
         
         // Set string
-        if (_result) {
-            [_resultField setStringValue:[self formatResult:_result withPrecision:5]];
+        if (_formattedResult) {
+            [_resultField setStringValue:_formattedResult];
         } else if ([[_inputField stringValue] length] == 0){
             [_resultField setStringValue:@""];
         } else {
             [_resultField setStringValue:@"..."];
         }
     }
-}
-
-- (NSString *)formatResult:(NSNumber *)rawResult withPrecision:(uint8_t)precision {
-    NSNumberFormatter *mFormatter = [[NSNumberFormatter alloc] init];
-
-    [mFormatter setMinimumIntegerDigits:1];
-    [mFormatter setMaximumFractionDigits:precision];
-
-    return [mFormatter stringFromNumber:rawResult];
 }
 
 - (void)controlTextDidChange:(NSNotification *)obj {

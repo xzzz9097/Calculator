@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C07B8691D684013002433F3 /* InputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C07B8681D684013002433F3 /* InputFormatter.m */; };
+		0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C103FF31D6C8C270095302A /* OutputFormatter.m */; };
 		0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2928D31D67B68900663BD5 /* ParserFrontend.m */; };
 		0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E7541D5E459000AD29A9 /* WindowController.m */; };
 		0CFE13361C77836A0005549D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13351C77836A0005549D /* AppDelegate.m */; };
@@ -45,6 +46,8 @@
 		0B5763B56599E86EE18F7F12 /* Pods-Binary Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Calculator/Pods-Binary Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		0C07B8671D684013002433F3 /* InputFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputFormatter.h; sourceTree = "<group>"; };
 		0C07B8681D684013002433F3 /* InputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputFormatter.m; sourceTree = "<group>"; };
+		0C103FF21D6C8C270095302A /* OutputFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFormatter.h; sourceTree = "<group>"; };
+		0C103FF31D6C8C270095302A /* OutputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputFormatter.m; sourceTree = "<group>"; };
 		0C2928D21D67B68900663BD5 /* ParserFrontend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserFrontend.h; sourceTree = "<group>"; };
 		0C2928D31D67B68900663BD5 /* ParserFrontend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserFrontend.m; sourceTree = "<group>"; };
 		0CA8E7531D5E459000AD29A9 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				0CFE13341C77836A0005549D /* AppDelegate.h */,
 				0C2928D21D67B68900663BD5 /* ParserFrontend.h */,
 				0C2928D31D67B68900663BD5 /* ParserFrontend.m */,
+				0C103FF21D6C8C270095302A /* OutputFormatter.h */,
+				0C103FF31D6C8C270095302A /* OutputFormatter.m */,
 				0C07B8671D684013002433F3 /* InputFormatter.h */,
 				0C07B8681D684013002433F3 /* InputFormatter.m */,
 				0CFE13351C77836A0005549D /* AppDelegate.m */,
@@ -456,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */,
+				0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */,
 				0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */,
 				0CFE133F1C77836A0005549D /* Binary_Calculator.xcdatamodeld in Sources */,
 				0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */,
