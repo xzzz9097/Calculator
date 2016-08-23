@@ -30,19 +30,19 @@
     return [[self alloc] initWithInputValue:nil];
 }
 
-- (NSNumber*)computeResultWithSubstitutions:(NSDictionary *)substitutions {
+- (NSNumber *)computeResultWithSubstitutions:(NSDictionary *)substitutions {
     return [_mathEvaluator evaluateString:[_inputString string] withSubstitutions:substitutions];
 }
 
-- (NSNumber*)computeResult {
+- (NSNumber *)computeResult {
     return [self computeResultWithSubstitutions:nil];
 }
 
-- (NSString*)formattedResultWithSubstitutions:(NSDictionary *)substitutions {
+- (NSString *)formattedResultWithSubstitutions:(NSDictionary *)substitutions {
     return [_outputFormatter stringFromNumber:[self computeResultWithSubstitutions:substitutions]];
 }
 
-- (NSString*)formattedResult {
+- (NSString *)formattedResult {
     return [self formattedResultWithSubstitutions:nil];
 }
 

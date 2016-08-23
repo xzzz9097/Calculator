@@ -18,10 +18,10 @@
 
 - (id)initWithInputValue:(NSMutableAttributedString *)textInputValue;
 + (instancetype)defaultParserFrontend;
-- (NSNumber*)computeResultWithSubstitutions:(NSDictionary*)substitutions;
-- (NSNumber*)computeResult;
-- (NSString*)formattedResultWithSubstitutions:(NSDictionary*)substitutions;
-- (NSString*)formattedResult;
+- (NSNumber *)computeResultWithSubstitutions:(NSDictionary *)substitutions;
+- (NSNumber *)computeResult;
+- (NSString *)formattedResultWithSubstitutions:(NSDictionary *)substitutions;
+- (NSString *)formattedResult;
 - (void)formatInput;
 
 @end
