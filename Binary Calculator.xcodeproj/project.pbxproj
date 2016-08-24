@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C07B8691D684013002433F3 /* InputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C07B8681D684013002433F3 /* InputFormatter.m */; };
 		0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C103FF31D6C8C270095302A /* OutputFormatter.m */; };
-		0C103FF71D6E497F0095302A /* InputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C103FF61D6E497F0095302A /* InputTextField.m */; };
 		0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2928D31D67B68900663BD5 /* ParserFrontend.m */; };
 		0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E7541D5E459000AD29A9 /* WindowController.m */; };
 		0CFE13361C77836A0005549D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13351C77836A0005549D /* AppDelegate.m */; };
@@ -49,8 +48,6 @@
 		0C07B8681D684013002433F3 /* InputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputFormatter.m; sourceTree = "<group>"; };
 		0C103FF21D6C8C270095302A /* OutputFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFormatter.h; sourceTree = "<group>"; };
 		0C103FF31D6C8C270095302A /* OutputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputFormatter.m; sourceTree = "<group>"; };
-		0C103FF51D6E497F0095302A /* InputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextField.h; sourceTree = "<group>"; };
-		0C103FF61D6E497F0095302A /* InputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextField.m; sourceTree = "<group>"; };
 		0C2928D21D67B68900663BD5 /* ParserFrontend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserFrontend.h; sourceTree = "<group>"; };
 		0C2928D31D67B68900663BD5 /* ParserFrontend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserFrontend.m; sourceTree = "<group>"; };
 		0CA8E7531D5E459000AD29A9 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
@@ -140,8 +137,6 @@
 				0C103FF31D6C8C270095302A /* OutputFormatter.m */,
 				0C07B8671D684013002433F3 /* InputFormatter.h */,
 				0C07B8681D684013002433F3 /* InputFormatter.m */,
-				0C103FF51D6E497F0095302A /* InputTextField.h */,
-				0C103FF61D6E497F0095302A /* InputTextField.m */,
 				0CFE13351C77836A0005549D /* AppDelegate.m */,
 				0CFE133A1C77836A0005549D /* CalculatorViewController.h */,
 				0CFE133B1C77836A0005549D /* CalculatorViewController.m */,
@@ -467,7 +462,6 @@
 			files = (
 				0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */,
 				0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */,
-				0C103FF71D6E497F0095302A /* InputTextField.m in Sources */,
 				0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */,
 				0CFE133F1C77836A0005549D /* Binary_Calculator.xcdatamodeld in Sources */,
 				0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */,

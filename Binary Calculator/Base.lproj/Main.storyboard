@@ -677,7 +677,7 @@
                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-6a-tvC">
                                 <rect key="frame" x="8" y="12" width="541" height="39"/>
                                 <subviews>
-                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ooa-UX-G8f" customClass="InputTextField">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ooa-UX-G8f">
                                         <rect key="frame" x="0.0" y="0.0" width="529" height="39"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="" drawsBackground="YES" allowsEditingTextAttributes="YES" id="n4G-hV-GLV">
                                             <font key="font" metaFont="systemThin" size="32"/>
