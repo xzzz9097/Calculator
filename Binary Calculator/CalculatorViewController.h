@@ -15,6 +15,7 @@
 @property (weak) IBOutlet NSTextField *resultField;
 
 - (void)compute;
+- (void)formatInput;
 - (void)controlTextDidChange:(NSNotification *)obj;
 
 @end
