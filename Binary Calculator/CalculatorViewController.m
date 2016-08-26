@@ -43,11 +43,17 @@
     }
 }
 
+- (void)formatInput {
+    if ([_parserFrontend inputString]) {
+        [_parserFrontend formatInput];
+        [_inputField setAttributedStringValue:[_parserFrontend inputString]];
+    }
+}
+
 - (void)controlTextDidChange:(NSNotification *)obj {
     [self compute];
 
-    [_parserFrontend formatInput];
-    [_inputField setAttributedStringValue:[_parserFrontend inputString]];
+    [self formatInput];
 }
 
 @end
