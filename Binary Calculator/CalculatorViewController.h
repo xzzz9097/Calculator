@@ -11,12 +11,13 @@
 
 @interface CalculatorViewController : NSViewController
 
-@property (weak) IBOutlet NSTextField *inputField;
-@property (weak) IBOutlet NSTextField *resultField;
+@property (unsafe_unretained) IBOutlet NSTextView *inputField;
+@property (unsafe_unretained) IBOutlet NSTextView *resultField;
 
+- (void)setTextViewFonts;
 - (void)compute;
 - (void)formatInput;
-- (void)controlTextDidChange:(NSNotification *)obj;
+- (void)textDidChange:(NSNotification *)obj;
 
 @end
 
