@@ -30,8 +30,8 @@
 }
 
 - (void)setTextViewFonts {
-    [_inputField setFont:[NSFont systemFontOfSize:24 weight:NSFontWeightThin]];
-    [_resultField setFont:[NSFont systemFontOfSize:24 weight:NSFontWeightLight]];
+    [_inputField setFont:[NSFont systemFontOfSize:32 weight:NSFontWeightThin]];
+    [_resultField setFont:[NSFont systemFontOfSize:32 weight:NSFontWeightLight]];
 }
 
 - (void)compute {
