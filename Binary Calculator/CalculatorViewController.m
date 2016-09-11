@@ -17,7 +17,7 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    [self setTextViewFonts];
+    [self prepareTextViews];
 
     _parserFrontend = [ParserFrontend defaultParserFrontend];
     _inputTextStorage = [_inputField textStorage];
@@ -29,9 +29,10 @@
     // Update the view, if already loaded.
 }
 
-- (void)setTextViewFonts {
+- (void)prepareTextViews {
     [_inputField setFont:[NSFont systemFontOfSize:32 weight:NSFontWeightThin]];
     [_resultField setFont:[NSFont systemFontOfSize:32 weight:NSFontWeightLight]];
+    [_resultField setAlignment:NSTextAlignmentRight];
 }
 
 - (void)compute {

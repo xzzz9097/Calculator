@@ -14,7 +14,7 @@
 @property (unsafe_unretained) IBOutlet NSTextView *inputField;
 @property (unsafe_unretained) IBOutlet NSTextView *resultField;
 
-- (void)setTextViewFonts;
+- (void)prepareTextViews;
 - (void)compute;
 - (void)formatInput;
 - (void)textDidChange:(NSNotification *)obj;
