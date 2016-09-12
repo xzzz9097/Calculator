@@ -11,6 +11,7 @@
 		0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C103FF31D6C8C270095302A /* OutputFormatter.m */; };
 		0C1F43291D86F2E600A0B824 /* PlainPasteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F43281D86F2E600A0B824 /* PlainPasteTextView.m */; };
 		0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2928D31D67B68900663BD5 /* ParserFrontend.m */; };
+		0C70D0391D86F76200428635 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C70D0381D86F76200428635 /* TextFieldCell.m */; };
 		0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E7541D5E459000AD29A9 /* WindowController.m */; };
 		0CFE13361C77836A0005549D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13351C77836A0005549D /* AppDelegate.m */; };
 		0CFE13391C77836A0005549D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13381C77836A0005549D /* main.m */; };
@@ -53,6 +54,8 @@
 		0C1F43281D86F2E600A0B824 /* PlainPasteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPasteTextView.m; sourceTree = "<group>"; };
 		0C2928D21D67B68900663BD5 /* ParserFrontend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserFrontend.h; sourceTree = "<group>"; };
 		0C2928D31D67B68900663BD5 /* ParserFrontend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserFrontend.m; sourceTree = "<group>"; };
+		0C70D0371D86F76200428635 /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		0C70D0381D86F76200428635 /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
 		0CA8E7531D5E459000AD29A9 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		0CA8E7541D5E459000AD29A9 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		0CFE13311C77836A0005549D /* Binary Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binary Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				0CFE13341C77836A0005549D /* AppDelegate.h */,
+				0C70D0371D86F76200428635 /* TextFieldCell.h */,
+				0C70D0381D86F76200428635 /* TextFieldCell.m */,
 				0C2928D21D67B68900663BD5 /* ParserFrontend.h */,
 				0C2928D31D67B68900663BD5 /* ParserFrontend.m */,
 				0C103FF21D6C8C270095302A /* OutputFormatter.h */,
@@ -470,6 +475,7 @@
 				0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */,
 				0CFE133F1C77836A0005549D /* Binary_Calculator.xcdatamodeld in Sources */,
 				0C1F43291D86F2E600A0B824 /* PlainPasteTextView.m in Sources */,
+				0C70D0391D86F76200428635 /* TextFieldCell.m in Sources */,
 				0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */,
 				0CFE13391C77836A0005549D /* main.m in Sources */,
 				0CFE13361C77836A0005549D /* AppDelegate.m in Sources */,
