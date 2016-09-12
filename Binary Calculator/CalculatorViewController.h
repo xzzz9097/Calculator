@@ -17,7 +17,6 @@
 - (void)prepareTextViews;
 - (void)compute;
 - (void)formatInput;
-- (void)textDidChange:(NSNotification *)obj;
 
 @end
 

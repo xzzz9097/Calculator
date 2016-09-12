@@ -60,10 +60,4 @@
     }
 }
 
-- (void)textDidChange:(NSNotification *)obj {
-    [self compute];
-
-    [self formatInput];
-}
-
 @end
