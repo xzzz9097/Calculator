@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C07B8691D684013002433F3 /* InputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C07B8681D684013002433F3 /* InputFormatter.m */; };
 		0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C103FF31D6C8C270095302A /* OutputFormatter.m */; };
+		0C257A951D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */; };
 		0C1F43291D86F2E600A0B824 /* PlainPasteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F43281D86F2E600A0B824 /* PlainPasteTextView.m */; };
 		0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2928D31D67B68900663BD5 /* ParserFrontend.m */; };
 		0C70D0391D86F76200428635 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C70D0381D86F76200428635 /* TextFieldCell.m */; };
@@ -50,6 +51,8 @@
 		0C07B8681D684013002433F3 /* InputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputFormatter.m; sourceTree = "<group>"; };
 		0C103FF21D6C8C270095302A /* OutputFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFormatter.h; sourceTree = "<group>"; };
 		0C103FF31D6C8C270095302A /* OutputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputFormatter.m; sourceTree = "<group>"; };
+		0C257A931D86A98500792C06 /* CalculatorViewController+TextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorViewController+TextViewDelegate.h"; sourceTree = "<group>"; };
+		0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CalculatorViewController+TextViewDelegate.m"; sourceTree = "<group>"; };
 		0C1F43271D86F2E600A0B824 /* PlainPasteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPasteTextView.h; sourceTree = "<group>"; };
 		0C1F43281D86F2E600A0B824 /* PlainPasteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPasteTextView.m; sourceTree = "<group>"; };
 		0C2928D21D67B68900663BD5 /* ParserFrontend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserFrontend.h; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				0C70D0381D86F76200428635 /* TextFieldCell.m */,
 				0C2928D21D67B68900663BD5 /* ParserFrontend.h */,
 				0C2928D31D67B68900663BD5 /* ParserFrontend.m */,
+				0C257A931D86A98500792C06 /* CalculatorViewController+TextViewDelegate.h */,
+				0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */,
 				0C103FF21D6C8C270095302A /* OutputFormatter.h */,
 				0C103FF31D6C8C270095302A /* OutputFormatter.m */,
 				0C07B8671D684013002433F3 /* InputFormatter.h */,
@@ -479,6 +484,7 @@
 				0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */,
 				0CFE13391C77836A0005549D /* main.m in Sources */,
 				0CFE13361C77836A0005549D /* AppDelegate.m in Sources */,
+				0C257A951D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m in Sources */,
 				0C07B8691D684013002433F3 /* InputFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

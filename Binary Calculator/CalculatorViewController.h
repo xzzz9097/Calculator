@@ -16,7 +16,6 @@
 
 - (void)compute;
 - (void)formatInput;
-- (void)controlTextDidChange:(NSNotification *)obj;
 
 @end
 
