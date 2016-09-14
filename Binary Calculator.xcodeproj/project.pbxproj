@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C07B8691D684013002433F3 /* InputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C07B8681D684013002433F3 /* InputFormatter.m */; };
 		0C103FF41D6C8C270095302A /* OutputFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C103FF31D6C8C270095302A /* OutputFormatter.m */; };
-		0C257A951D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */; };
 		0C1F43291D86F2E600A0B824 /* PlainPasteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F43281D86F2E600A0B824 /* PlainPasteTextView.m */; };
+		0C257A951D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */; };
 		0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2928D31D67B68900663BD5 /* ParserFrontend.m */; };
 		0C70D0391D86F76200428635 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C70D0381D86F76200428635 /* TextFieldCell.m */; };
 		0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E7541D5E459000AD29A9 /* WindowController.m */; };
@@ -51,10 +51,10 @@
 		0C07B8681D684013002433F3 /* InputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputFormatter.m; sourceTree = "<group>"; };
 		0C103FF21D6C8C270095302A /* OutputFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFormatter.h; sourceTree = "<group>"; };
 		0C103FF31D6C8C270095302A /* OutputFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputFormatter.m; sourceTree = "<group>"; };
-		0C257A931D86A98500792C06 /* CalculatorViewController+TextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorViewController+TextViewDelegate.h"; sourceTree = "<group>"; };
-		0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CalculatorViewController+TextViewDelegate.m"; sourceTree = "<group>"; };
 		0C1F43271D86F2E600A0B824 /* PlainPasteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPasteTextView.h; sourceTree = "<group>"; };
 		0C1F43281D86F2E600A0B824 /* PlainPasteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPasteTextView.m; sourceTree = "<group>"; };
+		0C257A931D86A98500792C06 /* CalculatorViewController+TextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorViewController+TextViewDelegate.h"; sourceTree = "<group>"; };
+		0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CalculatorViewController+TextViewDelegate.m"; sourceTree = "<group>"; };
 		0C2928D21D67B68900663BD5 /* ParserFrontend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserFrontend.h; sourceTree = "<group>"; };
 		0C2928D31D67B68900663BD5 /* ParserFrontend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserFrontend.m; sourceTree = "<group>"; };
 		0C70D0371D86F76200428635 /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 		0CFE13291C77836A0005549D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Edge Apps";
 				TargetAttributes = {
 					0CFE13301C77836A0005549D = {
@@ -545,8 +545,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -588,8 +590,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
