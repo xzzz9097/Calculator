@@ -769,6 +769,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorField" destination="uOJ-Oo-Atd" id="BoD-mU-oef"/>
                         <outlet property="inputField" destination="ooa-UX-G8f" id="TfA-7j-emu"/>
                         <outlet property="resultField" destination="Wr9-Jz-VOF" id="V5y-bB-ZWK"/>
                     </connections>

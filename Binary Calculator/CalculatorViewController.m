@@ -10,6 +10,8 @@
 
 @implementation CalculatorViewController {
     ParserFrontend *_parserFrontend;
+    NSString *_formattedResult;
+    NSView *_backgroundView;
 }
 
 - (void)viewDidLoad {
@@ -17,6 +19,10 @@
 
     // Do any additional setup after loading the view.
     _parserFrontend = [ParserFrontend defaultParserFrontend];
+
+    [self setComputationStatus:COMPUTATION_VOID];
+
+    [self prepareErrorField];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -30,16 +36,20 @@
     if (_parserFrontend) {
         [_parserFrontend setInputString:[_inputField attributedStringValue]];
         
-        NSString *_formattedResult = [_parserFrontend formattedResult];
+        _formattedResult = [_parserFrontend formattedResult];
         
         // Set string
         if (_formattedResult) {
-            [_resultField setStringValue:_formattedResult];
-        } else if ([[_inputField stringValue] length] == 0){
-            [_resultField setStringValue:@""];
+            [self setComputationStatus:COMPUTATION_DONE];
+            NSLog(@"HERE");
+        } else if ([[_inputField stringValue] length] == 0) {
+            [self setComputationStatus:COMPUTATION_VOID];
         } else {
-            [_resultField setStringValue:@"..."];
+            [self setComputationStatus:COMPUTATION_ERROR];
         }
+
+        [self updateResultField];
+        [self updateErrorField];
     }
 }
 
@@ -47,6 +57,43 @@
     if ([_parserFrontend inputString]) {
         [_parserFrontend formatInput];
         [_inputField setAttributedStringValue:[_parserFrontend inputString]];
+    }
+}
+
+- (void)prepareErrorField {
+    _backgroundView = [_errorField superview];
+
+    [_backgroundView setWantsLayer:true];
+
+    [self updateErrorField];
+}
+
+- (void)updateResultField {
+    switch (_computationStatus) {
+        case COMPUTATION_DONE:
+            [_resultField setStringValue:_formattedResult];
+            break;
+        case COMPUTATION_VOID:
+            [_resultField setStringValue:@""];
+            break;
+        case COMPUTATION_ERROR:
+            [_resultField setStringValue:@"..."];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)updateErrorField {
+    switch (_computationStatus) {
+        case COMPUTATION_ERROR:
+            [[_backgroundView layer] setBackgroundColor:[[NSColor redColor] CGColor]];
+            [_errorField setStringValue:@"Error"];
+            break;
+        default:
+            [[_backgroundView layer] setBackgroundColor:[[NSColor greenColor] CGColor]];
+            [_errorField setStringValue:@"Ready"];
+            break;
     }
 }
 
