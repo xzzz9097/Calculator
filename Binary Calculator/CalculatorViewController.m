@@ -89,32 +89,31 @@
         case COMPUTATION_ERROR:
             [[_backgroundView layer] setBackgroundColor:[[NSColor redColor] CGColor]];
             [_errorField setStringValue:[NSString stringWithFormat:@"Error: %@", [_parserFrontend errorString]]];
-            [self toggleErrorFieldVisibility:true];
+            [self toggleView:_backgroundView visible:true];
             break;
         default:
             [[_backgroundView layer] setBackgroundColor:[[NSColor greenColor] CGColor]];
             [_errorField setStringValue:@"Ready"];
-            [self toggleErrorFieldVisibility:false];
+            [self toggleView:_backgroundView visible:false];
             break;
     }
 }
 
-- (void)toggleErrorFieldVisibility:(BOOL)visible {
+- (void)toggleView:(NSView *)myView visible:(BOOL)visible {
     NSRect frame = [[self view] frame];
-    BOOL currentlyShown = [_backgroundView isDescendantOf:[self view]];
+    BOOL currentlyShown = [myView isDescendantOf:[self view]];
 
     if (visible && !currentlyShown) {
-        [[self view] addSubview:_backgroundView];
-        frame.size.height += [_backgroundView frame].size.height;
+        [[self view] addSubview:myView];
+        frame.size.height += [myView frame].size.height;
     } else if (!visible && currentlyShown) {
-        [_backgroundView removeFromSuperview];
-        frame.size.height -= [_backgroundView frame].size.height;
+        [myView removeFromSuperview];
+        frame.size.height -= [myView frame].size.height;
     }
 
     [[self view] setFrame:frame];
 
     [[[self view] window] setContentSize:frame.size];
-
 }
 
 @end
