@@ -28,6 +28,7 @@ typedef enum ComputationStatus : NSUInteger {
 - (void)prepareErrorField;
 - (void)updateResultField;
 - (void)updateErrorField;
+- (void)toggleErrorFieldVisibility:(BOOL)visible;
 
 @end
 
