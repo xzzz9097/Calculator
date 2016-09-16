@@ -23,5 +23,6 @@
 - (NSString *)formattedResultWithSubstitutions:(NSDictionary *)substitutions;
 - (NSString *)formattedResult;
 - (void)formatInput;
+- (NSString *)errorString;
 
 @end

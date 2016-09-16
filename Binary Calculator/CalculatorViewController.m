@@ -10,6 +10,7 @@
 
 @implementation CalculatorViewController {
     ParserFrontend *_parserFrontend;
+
     NSString *_formattedResult;
     NSView *_backgroundView;
 }
@@ -35,13 +36,12 @@
     // Parse expression
     if (_parserFrontend) {
         [_parserFrontend setInputString:[_inputField attributedStringValue]];
-        
+
         _formattedResult = [_parserFrontend formattedResult];
-        
+
         // Set string
         if (_formattedResult) {
             [self setComputationStatus:COMPUTATION_DONE];
-            NSLog(@"HERE");
         } else if ([[_inputField stringValue] length] == 0) {
             [self setComputationStatus:COMPUTATION_VOID];
         } else {
@@ -88,7 +88,7 @@
     switch (_computationStatus) {
         case COMPUTATION_ERROR:
             [[_backgroundView layer] setBackgroundColor:[[NSColor redColor] CGColor]];
-            [_errorField setStringValue:@"Error"];
+            [_errorField setStringValue:[NSString stringWithFormat:@"Error: %@", [_parserFrontend errorString]]];
             break;
         default:
             [[_backgroundView layer] setBackgroundColor:[[NSColor greenColor] CGColor]];

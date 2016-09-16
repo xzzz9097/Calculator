@@ -11,6 +11,8 @@
 @implementation ParserFrontend {
     InputFormatter *_inputFormatter;
     OutputFormatter *_outputFormatter;
+
+    NSString *_errorString;
 }
 
 - (id)initWithInputValue:(NSAttributedString *)textInputValue {
@@ -31,7 +33,13 @@
 }
 
 - (NSNumber *)computeResultWithSubstitutions:(NSDictionary *)substitutions {
-    return [_mathEvaluator evaluateString:[_inputString string] withSubstitutions:substitutions];
+    NSError *error = nil;
+
+    NSNumber *result = [_mathEvaluator evaluateString:[_inputString string] withSubstitutions:substitutions error:&error];
+
+    if (error) _errorString = [[error userInfo] valueForKey:DDMathParserFailureReasonKey];
+
+    return result;
 }
 
 - (NSNumber *)computeResult {
@@ -48,6 +56,10 @@
 
 - (void)formatInput {
     _inputString = [_inputFormatter formatInputString:_inputString];
+}
+
+- (NSString *)errorString {
+    return _errorString;
 }
 
 @end
