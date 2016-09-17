@@ -59,7 +59,7 @@
 }
 
 - (NSString *)errorString {
-    return _errorString;
+    return [[_errorString stringByReplacingOccurrencesOfString:@":" withString:@" "] stringByReplacingOccurrencesOfString:@"  " withString:@", "];
 }
 
 @end
