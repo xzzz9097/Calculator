@@ -61,7 +61,7 @@
 		0C70D0381D86F76200428635 /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
 		0CA8E7531D5E459000AD29A9 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		0CA8E7541D5E459000AD29A9 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
-		0CFE13311C77836A0005549D /* Binary Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binary Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFE13311C77836A0005549D /* Mathematica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathematica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFE13341C77836A0005549D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CFE13351C77836A0005549D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0CFE13381C77836A0005549D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,10 +71,10 @@
 		0CFE13401C77836A0005549D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CFE13431C77836A0005549D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CFE13451C77836B0005549D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CFE134A1C77836B0005549D /* Binary CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFE134A1C77836B0005549D /* MathematicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathematicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFE134E1C77836B0005549D /* Binary_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Binary_CalculatorTests.m; sourceTree = "<group>"; };
 		0CFE13501C77836B0005549D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CFE13551C77836B0005549D /* Binary CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFE13551C77836B0005549D /* MathematicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathematicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFE13591C77836B0005549D /* Binary_CalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Binary_CalculatorUITests.m; sourceTree = "<group>"; };
 		0CFE135B1C77836B0005549D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146050EA07E6BC1EA961231D /* Pods-Binary Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Calculator/Pods-Binary Calculator.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		0CFE13321C77836A0005549D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CFE13311C77836A0005549D /* Binary Calculator.app */,
-				0CFE134A1C77836B0005549D /* Binary CalculatorTests.xctest */,
-				0CFE13551C77836B0005549D /* Binary CalculatorUITests.xctest */,
+				0CFE13311C77836A0005549D /* Mathematica.app */,
+				0CFE134A1C77836B0005549D /* MathematicaTests.xctest */,
+				0CFE13551C77836B0005549D /* MathematicaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CFE13301C77836A0005549D /* Binary Calculator */ = {
+		0CFE13301C77836A0005549D /* Mathematica */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFE135E1C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary Calculator" */;
+			buildConfigurationList = 0CFE135E1C77836B0005549D /* Build configuration list for PBXNativeTarget "Mathematica" */;
 			buildPhases = (
 				44CEA26D92C5126C7BAE7932 /* [CP] Check Pods Manifest.lock */,
 				0CFE132D1C77836A0005549D /* Sources */,
@@ -233,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = "Binary Calculator";
+			name = Mathematica;
 			productName = "Binary Calculator";
-			productReference = 0CFE13311C77836A0005549D /* Binary Calculator.app */;
+			productReference = 0CFE13311C77836A0005549D /* Mathematica.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0CFE13491C77836B0005549D /* Binary CalculatorTests */ = {
+		0CFE13491C77836B0005549D /* MathematicaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFE13611C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary CalculatorTests" */;
+			buildConfigurationList = 0CFE13611C77836B0005549D /* Build configuration list for PBXNativeTarget "MathematicaTests" */;
 			buildPhases = (
 				8836E0B6CF2FB897F395E9B5 /* [CP] Check Pods Manifest.lock */,
 				0CFE13461C77836B0005549D /* Sources */,
@@ -254,14 +254,14 @@
 			dependencies = (
 				0CFE134C1C77836B0005549D /* PBXTargetDependency */,
 			);
-			name = "Binary CalculatorTests";
+			name = MathematicaTests;
 			productName = "Binary CalculatorTests";
-			productReference = 0CFE134A1C77836B0005549D /* Binary CalculatorTests.xctest */;
+			productReference = 0CFE134A1C77836B0005549D /* MathematicaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0CFE13541C77836B0005549D /* Binary CalculatorUITests */ = {
+		0CFE13541C77836B0005549D /* MathematicaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFE13641C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary CalculatorUITests" */;
+			buildConfigurationList = 0CFE13641C77836B0005549D /* Build configuration list for PBXNativeTarget "MathematicaUITests" */;
 			buildPhases = (
 				991589A84B855AC0BA6829F5 /* [CP] Check Pods Manifest.lock */,
 				0CFE13511C77836B0005549D /* Sources */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				0CFE13571C77836B0005549D /* PBXTargetDependency */,
 			);
-			name = "Binary CalculatorUITests";
+			name = MathematicaUITests;
 			productName = "Binary CalculatorUITests";
-			productReference = 0CFE13551C77836B0005549D /* Binary CalculatorUITests.xctest */;
+			productReference = 0CFE13551C77836B0005549D /* MathematicaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -301,7 +301,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0CFE132C1C77836A0005549D /* Build configuration list for PBXProject "Binary Calculator" */;
+			buildConfigurationList = 0CFE132C1C77836A0005549D /* Build configuration list for PBXProject "Mathematica" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -314,9 +314,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CFE13301C77836A0005549D /* Binary Calculator */,
-				0CFE13491C77836B0005549D /* Binary CalculatorTests */,
-				0CFE13541C77836B0005549D /* Binary CalculatorUITests */,
+				0CFE13301C77836A0005549D /* Mathematica */,
+				0CFE13491C77836B0005549D /* MathematicaTests */,
+				0CFE13541C77836B0005549D /* MathematicaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -510,12 +510,12 @@
 /* Begin PBXTargetDependency section */
 		0CFE134C1C77836B0005549D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CFE13301C77836A0005549D /* Binary Calculator */;
+			target = 0CFE13301C77836A0005549D /* Mathematica */;
 			targetProxy = 0CFE134B1C77836B0005549D /* PBXContainerItemProxy */;
 		};
 		0CFE13571C77836B0005549D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CFE13301C77836A0005549D /* Binary Calculator */;
+			target = 0CFE13301C77836A0005549D /* Mathematica */;
 			targetProxy = 0CFE13561C77836B0005549D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -623,7 +623,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Binary Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.edge.Binary-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edge.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -636,7 +636,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Binary Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.edge.Binary-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edge.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -651,7 +651,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edge.Binary-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Binary Calculator.app/Contents/MacOS/Binary Calculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mathematica.app/Contents/MacOS/Mathematica";
 			};
 			name = Debug;
 		};
@@ -665,7 +665,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edge.Binary-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Binary Calculator.app/Contents/MacOS/Binary Calculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mathematica.app/Contents/MacOS/Mathematica";
 			};
 			name = Release;
 		};
@@ -700,7 +700,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CFE132C1C77836A0005549D /* Build configuration list for PBXProject "Binary Calculator" */ = {
+		0CFE132C1C77836A0005549D /* Build configuration list for PBXProject "Mathematica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CFE135C1C77836B0005549D /* Debug */,
@@ -709,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CFE135E1C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary Calculator" */ = {
+		0CFE135E1C77836B0005549D /* Build configuration list for PBXNativeTarget "Mathematica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CFE135F1C77836B0005549D /* Debug */,
@@ -718,7 +718,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CFE13611C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary CalculatorTests" */ = {
+		0CFE13611C77836B0005549D /* Build configuration list for PBXNativeTarget "MathematicaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CFE13621C77836B0005549D /* Debug */,
@@ -727,7 +727,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CFE13641C77836B0005549D /* Build configuration list for PBXNativeTarget "Binary CalculatorUITests" */ = {
+		0CFE13641C77836B0005549D /* Build configuration list for PBXNativeTarget "MathematicaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CFE13651C77836B0005549D /* Debug */,

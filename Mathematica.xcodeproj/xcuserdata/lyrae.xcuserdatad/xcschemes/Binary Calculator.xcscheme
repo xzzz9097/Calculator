@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CFE13301C77836A0005549D"
-               BuildableName = "Binary Calculator.app"
-               BlueprintName = "Binary Calculator"
-               ReferencedContainer = "container:Binary Calculator.xcodeproj">
+               BuildableName = "Mathematica.app"
+               BlueprintName = "Mathematica"
+               ReferencedContainer = "container:Mathematica.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CFE13491C77836B0005549D"
-               BuildableName = "Binary CalculatorTests.xctest"
-               BlueprintName = "Binary CalculatorTests"
-               ReferencedContainer = "container:Binary Calculator.xcodeproj">
+               BuildableName = "MathematicaTests.xctest"
+               BlueprintName = "MathematicaTests"
+               ReferencedContainer = "container:Mathematica.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CFE13541C77836B0005549D"
-               BuildableName = "Binary CalculatorUITests.xctest"
-               BlueprintName = "Binary CalculatorUITests"
-               ReferencedContainer = "container:Binary Calculator.xcodeproj">
+               BuildableName = "MathematicaUITests.xctest"
+               BlueprintName = "MathematicaUITests"
+               ReferencedContainer = "container:Mathematica.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CFE13301C77836A0005549D"
-            BuildableName = "Binary Calculator.app"
-            BlueprintName = "Binary Calculator"
-            ReferencedContainer = "container:Binary Calculator.xcodeproj">
+            BuildableName = "Mathematica.app"
+            BlueprintName = "Mathematica"
+            ReferencedContainer = "container:Mathematica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CFE13301C77836A0005549D"
-            BuildableName = "Binary Calculator.app"
-            BlueprintName = "Binary Calculator"
-            ReferencedContainer = "container:Binary Calculator.xcodeproj">
+            BuildableName = "Mathematica.app"
+            BlueprintName = "Mathematica"
+            ReferencedContainer = "container:Mathematica.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CFE13301C77836A0005549D"
-            BuildableName = "Binary Calculator.app"
-            BlueprintName = "Binary Calculator"
-            ReferencedContainer = "container:Binary Calculator.xcodeproj">
+            BuildableName = "Mathematica.app"
+            BlueprintName = "Mathematica"
+            ReferencedContainer = "container:Mathematica.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
