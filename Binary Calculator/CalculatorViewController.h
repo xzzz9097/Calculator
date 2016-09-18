@@ -29,6 +29,7 @@ typedef enum ComputationStatus : NSUInteger {
 - (void)updateResultField;
 - (void)updateErrorField;
 - (void)toggleView:(NSView *)myView visible:(BOOL)visible;
+- (void)shiftWindowBy:(CGFloat)value down:(BOOL)down;
 
 @end
 
