@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
-@interface InputFormatter : NSObject
+@interface InputFormatter : NSFormatter
 
 @property (nonatomic) NSString *registeredFunctions;
 @property (nonatomic) id originalStringAttributes;
 
 - (id)initWithRegisteredFunctions:(NSArray *)registeredFunctions;
-- (NSMutableAttributedString *)formatInputString:(NSAttributedString *)inputString;
 - (void)applyItalicStyle:(NSMutableAttributedString *)formattedString range:(NSRange)range;
 - (void)saveOriginalStyle:(NSAttributedString *)originalString;
 - (void)restoreOriginalStyle:(NSMutableAttributedString *)formattedString range:(NSRange)range;

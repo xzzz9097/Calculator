@@ -55,7 +55,7 @@
 }
 
 - (void)formatInput {
-    _inputString = [_inputFormatter formatInputString:_inputString];
+    _inputString = [_inputFormatter attributedStringForObjectValue:_inputString withDefaultAttributes:nil];
 }
 
 - (NSString *)errorString {

@@ -20,16 +20,20 @@
     return self;
 }
 
-- (NSMutableAttributedString *)formatInputString:(NSAttributedString *)inputString {
-    NSMutableAttributedString *formattedString = [inputString mutableCopy];
-    __block NSRange range = NSMakeRange(0, [inputString length]);
+- (NSAttributedString *)attributedStringForObjectValue:(id)obj withDefaultAttributes:(NSDictionary<NSString *,id> *)attrs {
+    if (![obj isKindOfClass:[NSAttributedString class]]) {
+        return nil;
+    }
 
-    [self saveOriginalStyle:inputString];
+    NSMutableAttributedString *formattedString = [obj mutableCopy];
+    __block NSRange range = NSMakeRange(0, [obj length]);
+
+    [self saveOriginalStyle:obj];
     [self restoreOriginalStyle:formattedString range:range];
 
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:_registeredFunctions options:kNilOptions error:nil];
 
-    [regex enumerateMatchesInString:[inputString string] options:kNilOptions range:range usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+    [regex enumerateMatchesInString:[obj string] options:kNilOptions range:range usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
         range = [result rangeAtIndex:1];
 
         [self applyItalicStyle:formattedString range:range];
