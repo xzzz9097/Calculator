@@ -63,7 +63,7 @@
 - (NSString *)buildRegularExpressionWithFunctionsArray:(NSArray *)functionsArray {
     NSString *regularExpression = @"";
 
-    regularExpression = [regularExpression stringByAppendingString:@"("];
+    regularExpression = [regularExpression stringByAppendingString:@"\\b("];
 
     for (NSString *functionName in functionsArray) {
         regularExpression = [regularExpression stringByAppendingString:functionName];
@@ -71,7 +71,7 @@
     }
 
     regularExpression = [regularExpression substringToIndex:[regularExpression length] - 1];
-    regularExpression = [regularExpression stringByAppendingString:@")"];
+    regularExpression = [regularExpression stringByAppendingString:@")\\b"];
 
     return regularExpression;
 }
