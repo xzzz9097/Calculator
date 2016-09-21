@@ -88,7 +88,7 @@
     switch (_computationStatus) {
         case COMPUTATION_ERROR:
             [[_backgroundView layer] setBackgroundColor:[[NSColor redColor] CGColor]];
-            [_errorField setStringValue:[NSString stringWithFormat:@"Error: %@", [_parserFrontend errorString]]];
+            [_errorField setStringValue:[_parserFrontend errorString]];
             [self toggleView:_backgroundView visible:true];
             break;
         default:
