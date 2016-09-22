@@ -14,5 +14,8 @@
 - (NSAttributedString *)lastSavedExpression;
 - (void)saveExpression:(NSAttributedString *)expression;
 - (BOOL)clearHistory;
+- (void)resetRequest;
+- (NSInteger)requestedItemIndex;
+- (NSAttributedString *)previousSavedExpression;
 
 @end

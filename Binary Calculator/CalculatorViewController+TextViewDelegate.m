@@ -20,4 +20,14 @@
     [self formatInput];
 }
 
+- (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)commandSelector {
+    if (commandSelector == @selector(moveUp:)) {
+        [self restoreLastInputString];
+        [self compute];
+        return true;
+    }
+
+    return false;
+}
+
 @end

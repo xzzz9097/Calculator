@@ -30,6 +30,7 @@ typedef enum ComputationStatus : NSUInteger {
 - (void)updateErrorField;
 - (BOOL)isTextFieldVoid;
 - (void)saveCurrentInputString;
+- (void)restoreLastInputString;
 
 @end
 

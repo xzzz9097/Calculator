@@ -69,4 +69,12 @@
     }
 }
 
+- (void)restoreLastInputString {
+    NSAttributedString *lastInputString = [_historyMaker previousSavedExpression];
+
+    if (lastInputString) {
+        _inputString = lastInputString;
+    }
+}
+
 @end

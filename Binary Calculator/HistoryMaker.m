@@ -10,13 +10,15 @@
 
 @implementation HistoryMaker {
     NSMutableArray *_historyArray;
+    NSUInteger _requestedIndex;
 }
 
 - (id)init {
     self = [super init];
 
     if (self) {
-        _historyArray = [[NSMutableArray alloc] init];
+        _historyArray = [[NSMutableArray alloc] initWithCapacity:10];
+        [self resetRequest];
     }
 
     return self;
@@ -26,18 +28,41 @@
     return [[self alloc] init];
 }
 
-- (NSString *)lastSavedExpression {
+- (NSAttributedString *)lastSavedExpression {
     return [_historyArray lastObject];
 }
 
 - (void)saveExpression:(NSAttributedString *)expression {
-    [_historyArray addObject:expression];
+    if (![_historyArray containsObject:expression]) {
+        [_historyArray addObject:expression];
+    }
+
+    [self resetRequest];
 }
 
 - (BOOL)clearHistory {
     [_historyArray removeAllObjects];
 
     return ([_historyArray firstObject] == nil);
+}
+
+- (void)resetRequest {
+    _requestedIndex = 0;
+}
+
+- (NSInteger)requestedItemIndex {
+    return [_historyArray count] - _requestedIndex - 1;
+}
+
+- (NSAttributedString *)previousSavedExpression {
+    NSInteger index = [self requestedItemIndex];
+
+    if (index > -1) {
+        _requestedIndex++;
+        return [_historyArray objectAtIndex:index];
+    }
+
+    return nil;
 }
 
 @end

@@ -9,8 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "CalculatorViewController.h"
 
-@interface CalculatorViewController (TextViewDelegate)
-
-- (void)controlTextDidChange:(NSNotification *)obj;
+@interface CalculatorViewController (TextViewDelegate) <NSTextFieldDelegate>
 
 @end

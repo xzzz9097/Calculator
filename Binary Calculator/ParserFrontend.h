@@ -27,5 +27,6 @@
 - (void)formatInput;
 - (NSString *)errorString;
 - (void)saveCurrentInputString;
+- (void)restoreLastInputString;
 
 @end

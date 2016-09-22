@@ -110,4 +110,10 @@
     }
 }
 
+- (void)restoreLastInputString {
+    [_parserFrontend restoreLastInputString];
+
+    [_inputField setAttributedStringValue:[_parserFrontend inputString]];
+}
+
 @end
