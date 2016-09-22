@@ -23,6 +23,7 @@
         _inputString = textInputValue;
         _inputFormatter = [[InputFormatter alloc] initWithRegisteredFunctions:[_mathEvaluator registeredFunctions]];
         _outputFormatter = [[OutputFormatter alloc] initWithPrecision:5];
+        _historyMaker = [HistoryMaker defaultHistoryMaker];
     }
     
     return self;
@@ -60,6 +61,12 @@
 
 - (NSString *)errorString {
     return [[_errorString stringByReplacingOccurrencesOfString:@":" withString:@" "] stringByReplacingOccurrencesOfString:@"  " withString:@", "];
+}
+
+- (void)saveCurrentInputString {
+    if (_inputString) {
+        [_historyMaker saveExpression:_inputString];
+    }
 }
 
 @end

@@ -10,11 +10,13 @@
 #import <DDMathEvaluator.h>
 #import "InputFormatter.h"
 #import "OutputFormatter.h"
+#import "HistoryMaker.h"
 
 @interface ParserFrontend : NSObject
 
 @property (nonatomic) NSAttributedString *inputString;
 @property (nonatomic) DDMathEvaluator *mathEvaluator;
+@property (nonatomic) HistoryMaker *historyMaker;
 
 - (id)initWithInputValue:(NSMutableAttributedString *)textInputValue;
 + (instancetype)defaultParserFrontend;
@@ -24,5 +26,6 @@
 - (NSString *)formattedResult;
 - (void)formatInput;
 - (NSString *)errorString;
+- (void)saveCurrentInputString;
 
 @end

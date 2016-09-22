@@ -14,6 +14,7 @@
 		0C2928D41D67B68900663BD5 /* ParserFrontend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2928D31D67B68900663BD5 /* ParserFrontend.m */; };
 		0C70D0391D86F76200428635 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C70D0381D86F76200428635 /* TextFieldCell.m */; };
 		0CA8E7551D5E459000AD29A9 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8E7541D5E459000AD29A9 /* WindowController.m */; };
+		0CEE79AD1D932F260068AD17 /* HistoryMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE79AC1D932F260068AD17 /* HistoryMaker.m */; };
 		0CFE13361C77836A0005549D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13351C77836A0005549D /* AppDelegate.m */; };
 		0CFE13391C77836A0005549D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE13381C77836A0005549D /* main.m */; };
 		0CFE133C1C77836A0005549D /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE133B1C77836A0005549D /* CalculatorViewController.m */; };
@@ -61,6 +62,8 @@
 		0C70D0381D86F76200428635 /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
 		0CA8E7531D5E459000AD29A9 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		0CA8E7541D5E459000AD29A9 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		0CEE79AB1D932F260068AD17 /* HistoryMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryMaker.h; sourceTree = "<group>"; };
+		0CEE79AC1D932F260068AD17 /* HistoryMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryMaker.m; sourceTree = "<group>"; };
 		0CFE13311C77836A0005549D /* Mathematica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathematica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFE13341C77836A0005549D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CFE13351C77836A0005549D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				0C70D0381D86F76200428635 /* TextFieldCell.m */,
 				0C2928D21D67B68900663BD5 /* ParserFrontend.h */,
 				0C2928D31D67B68900663BD5 /* ParserFrontend.m */,
+				0CEE79AB1D932F260068AD17 /* HistoryMaker.h */,
+				0CEE79AC1D932F260068AD17 /* HistoryMaker.m */,
 				0C257A931D86A98500792C06 /* CalculatorViewController+TextViewDelegate.h */,
 				0C257A941D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m */,
 				0C103FF21D6C8C270095302A /* OutputFormatter.h */,
@@ -486,6 +491,7 @@
 				0CFE13361C77836A0005549D /* AppDelegate.m in Sources */,
 				0C257A951D86A98500792C06 /* CalculatorViewController+TextViewDelegate.m in Sources */,
 				0C07B8691D684013002433F3 /* InputFormatter.m in Sources */,
+				0CEE79AD1D932F260068AD17 /* HistoryMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

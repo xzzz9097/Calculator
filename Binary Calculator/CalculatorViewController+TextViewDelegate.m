@@ -11,6 +11,10 @@
 @implementation CalculatorViewController (TextViewDelegate)
 
 - (void)controlTextDidChange:(NSNotification *)obj {
+    if ([self isTextFieldVoid]) {
+        [self saveCurrentInputString];
+    }
+
     [self compute];
     
     [self formatInput];

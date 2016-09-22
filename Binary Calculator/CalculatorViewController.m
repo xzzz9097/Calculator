@@ -42,7 +42,7 @@
         // Set string
         if (_formattedResult) {
             [self setComputationStatus:COMPUTATION_DONE];
-        } else if ([[_inputField stringValue] length] == 0) {
+        } else if ([self isTextFieldVoid]) {
             [self setComputationStatus:COMPUTATION_VOID];
         } else {
             [self setComputationStatus:COMPUTATION_ERROR];
@@ -125,6 +125,16 @@
         [[[self view] window] setFrameOrigin:NSMakePoint(windowFrame.origin.x, windowFrame.origin.y - value)];
     } else {
         [[[self view] window] setFrameOrigin:NSMakePoint(windowFrame.origin.x, windowFrame.origin.y + value)];
+    }
+}
+
+- (BOOL)isTextFieldVoid {
+    return [[_inputField stringValue] length] == 0;
+}
+
+- (void)saveCurrentInputString {
+    if (_computationStatus == COMPUTATION_DONE) {
+        [_parserFrontend saveCurrentInputString];
     }
 }
 
