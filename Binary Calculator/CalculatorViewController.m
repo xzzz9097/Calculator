@@ -104,6 +104,10 @@
     return [[_inputField stringValue] length] == 0;
 }
 
+- (BOOL)isTextSelectedInEditor:(NSTextView *)textView {
+    return ([textView selectedRange].length > 0);
+}
+
 - (void)saveCurrentInputString {
     if (_computationStatus == COMPUTATION_DONE) {
         [_parserFrontend saveCurrentInputString];

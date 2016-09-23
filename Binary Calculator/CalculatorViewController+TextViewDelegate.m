@@ -22,8 +22,10 @@
 
 - (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)commandSelector {
     if (commandSelector == @selector(moveUp:)) {
-        [self restoreLastInputString];
-        [self compute];
+        if ([self isTextFieldVoid] | [self isTextSelectedInEditor:textView]) {
+            [self restoreLastInputString];
+            [self compute];
+        }
         return true;
     }
 
