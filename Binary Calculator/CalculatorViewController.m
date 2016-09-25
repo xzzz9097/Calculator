@@ -23,6 +23,7 @@
     _parserFrontend = [ParserFrontend defaultParserFrontend];
 
     [self setComputationStatus:COMPUTATION_VOID];
+    [self setShouldResetHistory:false];
 
     [self prepareErrorField];
 }
@@ -47,6 +48,11 @@
             [self setComputationStatus:COMPUTATION_VOID];
         } else {
             [self setComputationStatus:COMPUTATION_ERROR];
+        }
+
+        if (_shouldResetHistory) {
+            [_parserFrontend resetHistoryRequest];
+            _shouldResetHistory = false;
         }
 
         [self updateResultField];
@@ -109,8 +115,15 @@
 }
 
 - (void)saveCurrentInputString {
-    if (_computationStatus == COMPUTATION_DONE) {
-        [_parserFrontend saveCurrentInputString];
+    switch (_computationStatus) {
+        case COMPUTATION_DONE:
+            [_parserFrontend saveCurrentInputString];
+            break;
+        case COMPUTATION_ERROR:
+            _shouldResetHistory = true;
+            break;
+        default:
+            break;
     }
 }
 

@@ -16,7 +16,6 @@
     }
 
     [self compute];
-    
     [self formatInput];
 }
 
@@ -25,6 +24,8 @@
         if ([self isTextFieldVoid] | [self isTextSelectedInEditor:textView]) {
             [self restoreLastInputString];
             [self compute];
+
+            [self setShouldResetHistory:false];
         }
         return true;
     }

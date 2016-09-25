@@ -36,8 +36,6 @@
     if (![_historyArray containsObject:expression]) {
         [_historyArray addObject:expression];
     }
-
-    [self resetRequest];
 }
 
 - (BOOL)clearHistory {

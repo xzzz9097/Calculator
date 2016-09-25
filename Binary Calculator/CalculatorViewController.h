@@ -23,6 +23,8 @@ typedef enum ComputationStatus : NSUInteger {
 @property (weak) IBOutlet NSTextField *resultField;
 @property (weak) IBOutlet NSTextField *errorField;
 
+@property (nonatomic) BOOL shouldResetHistory;
+
 - (void)compute;
 - (void)formatInput;
 - (void)prepareErrorField;

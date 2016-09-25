@@ -66,6 +66,7 @@
 - (void)saveCurrentInputString {
     if (_inputString) {
         [_historyMaker saveExpression:_inputString];
+        [self resetHistoryRequest];
     }
 }
 
@@ -75,6 +76,10 @@
     if (lastInputString) {
         _inputString = lastInputString;
     }
+}
+
+- (void)resetHistoryRequest {
+    [_historyMaker resetRequest];
 }
 
 @end

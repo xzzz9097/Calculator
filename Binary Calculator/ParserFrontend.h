@@ -28,5 +28,6 @@
 - (NSString *)errorString;
 - (void)saveCurrentInputString;
 - (void)restoreLastInputString;
+- (void)resetHistoryRequest;
 
 @end
