@@ -13,7 +13,7 @@
     ParserFrontend *_parserFrontend;
 
     NSString *_formattedResult;
-    NSView *_backgroundView;
+    NSView *_errorBackgroundView;
     NSView *_completionBackgroundView;
 }
 
@@ -70,9 +70,9 @@
 }
 
 - (void)prepareErrorField {
-    _backgroundView = [_errorField superview];
+    _errorBackgroundView = [_errorField superview];
 
-    [_backgroundView setWantsLayer:true];
+    [_errorBackgroundView setWantsLayer:true];
 
     [self updateErrorField];
 }
@@ -102,14 +102,14 @@
 - (void)updateErrorField {
     switch (_computationStatus) {
         case COMPUTATION_ERROR:
-            [[_backgroundView layer] setBackgroundColor:[[NSColor redColor] CGColor]];
+            [[_errorBackgroundView layer] setBackgroundColor:[[NSColor redColor] CGColor]];
             [_errorField setStringValue:[_parserFrontend errorString]];
-            [self toggleView:_backgroundView visible:true];
+            [self toggleView:_errorBackgroundView visible:true];
             break;
         default:
-            [[_backgroundView layer] setBackgroundColor:[[NSColor greenColor] CGColor]];
+            [[_errorBackgroundView layer] setBackgroundColor:[[NSColor greenColor] CGColor]];
             [_errorField setStringValue:@"Ready"];
-            [self toggleView:_backgroundView visible:false];
+            [self toggleView:_errorBackgroundView visible:false];
             break;
     }
 }
