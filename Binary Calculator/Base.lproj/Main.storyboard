@@ -672,11 +672,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="CalculatorViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="ojb-MD-oao">
-                                <rect key="frame" x="0.0" y="18" width="560" height="82"/>
+                                <rect key="frame" x="0.0" y="218" width="560" height="82"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-6a-tvC">
                                         <rect key="frame" x="8" y="12" width="544" height="40"/>
@@ -741,15 +741,25 @@
                                     <constraint firstItem="uOJ-Oo-Atd" firstAttribute="top" secondItem="E1E-5S-g0z" secondAttribute="top" constant="2" id="vHs-9u-mcK"/>
                                 </constraints>
                             </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="FrC-2a-CfU">
+                                <rect key="frame" x="0.0" y="18" width="560" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="L8T-Ig-l0E"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ojb-MD-oao" secondAttribute="trailing" id="15l-PT-wha"/>
                             <constraint firstItem="ojb-MD-oao" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="77f-BK-wtW"/>
+                            <constraint firstAttribute="trailing" secondItem="FrC-2a-CfU" secondAttribute="trailing" id="8lu-QC-6s9"/>
                             <constraint firstAttribute="trailing" secondItem="E1E-5S-g0z" secondAttribute="trailing" id="CbL-UH-Drd"/>
                             <constraint firstAttribute="bottom" secondItem="E1E-5S-g0z" secondAttribute="bottom" id="Cnc-lB-MY6"/>
                             <constraint firstItem="E1E-5S-g0z" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="DJc-jv-DhC"/>
-                            <constraint firstItem="E1E-5S-g0z" firstAttribute="top" secondItem="ojb-MD-oao" secondAttribute="bottom" id="Zaw-Cc-wjv"/>
-                            <constraint firstItem="E1E-5S-g0z" firstAttribute="top" secondItem="ojb-MD-oao" secondAttribute="bottom" id="qbm-CI-KiE"/>
+                            <constraint firstAttribute="trailing" secondItem="FrC-2a-CfU" secondAttribute="trailing" id="Fjt-O9-jao"/>
+                            <constraint firstItem="FrC-2a-CfU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="G0L-KY-jvS"/>
+                            <constraint firstItem="ojb-MD-oao" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="UTm-72-uLN"/>
+                            <constraint firstItem="FrC-2a-CfU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="h3l-ir-a9q"/>
+                            <constraint firstItem="E1E-5S-g0z" firstAttribute="top" secondItem="FrC-2a-CfU" secondAttribute="bottom" id="k9x-Dn-L36"/>
                             <constraint firstItem="ojb-MD-oao" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="wuj-t9-ZPS"/>
                         </constraints>
                     </view>
