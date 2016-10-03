@@ -22,12 +22,14 @@ typedef enum ComputationStatus : NSUInteger {
 @property (weak) IBOutlet NSTextField *inputField;
 @property (weak) IBOutlet NSTextField *resultField;
 @property (weak) IBOutlet NSTextField *errorField;
+@property (weak) IBOutlet NSTableView *completionTableView;
 
 @property (nonatomic) BOOL shouldResetHistory;
 
 - (void)compute;
 - (void)formatInput;
 - (void)prepareErrorField;
+- (void)prepareCompletionTableView;
 - (void)updateResultField;
 - (void)updateErrorField;
 - (BOOL)isTextFieldVoid;

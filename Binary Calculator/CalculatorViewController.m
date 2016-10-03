@@ -14,6 +14,7 @@
 
     NSString *_formattedResult;
     NSView *_backgroundView;
+    NSView *_completionBackgroundView;
 }
 
 - (void)viewDidLoad {
@@ -26,6 +27,7 @@
     [self setShouldResetHistory:false];
 
     [self prepareErrorField];
+    [self prepareCompletionTableView];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -73,6 +75,12 @@
     [_backgroundView setWantsLayer:true];
 
     [self updateErrorField];
+}
+
+- (void)prepareCompletionTableView {
+    _completionBackgroundView = [[[_completionTableView superview] superview] superview];
+
+    [self toggleView:_completionBackgroundView visible:false];
 }
 
 - (void)updateResultField {
