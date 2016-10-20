@@ -118,6 +118,10 @@
     return [[_inputField stringValue] length] == 0;
 }
 
+- (BOOL)isTextFieldValid {
+    return ![[_inputField stringValue] isEqualToString:@"-"];
+}
+
 - (BOOL)isTextSelectedInEditor:(NSTextView *)textView {
     return ([textView selectedRange].length > 0);
 }
