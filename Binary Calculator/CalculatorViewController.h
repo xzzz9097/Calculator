@@ -31,6 +31,7 @@ typedef enum ComputationStatus : NSUInteger {
 - (void)updateResultField;
 - (void)updateErrorField;
 - (BOOL)isTextFieldVoid;
+- (BOOL)isTextFieldValid;
 - (BOOL)isTextSelectedInEditor:(NSTextView *)textView;
 - (void)saveCurrentInputString;
 - (void)restoreLastInputString;
