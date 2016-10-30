@@ -24,7 +24,7 @@
 - (void)hideTitleBar {
     [[self window] setTitleVisibility:NSWindowTitleHidden];
     [[self window] setTitlebarAppearsTransparent:true];
-    [[self window] setStyleMask:[[self window] styleMask]|NSFullSizeContentViewWindowMask];
+    [[self window] setStyleMask:[[self window] styleMask]|NSWindowStyleMaskFullSizeContentView];
 }
 
 @end
