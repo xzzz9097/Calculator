@@ -23,6 +23,8 @@ typedef enum ComputationStatus : NSUInteger {
 @property (weak) IBOutlet NSTextField *resultField;
 @property (weak) IBOutlet NSTextField *errorField;
 
+@property (weak) NSTextView *fieldEditor;
+
 @property (nonatomic) BOOL shouldResetHistory;
 
 - (void)compute;
@@ -35,6 +37,9 @@ typedef enum ComputationStatus : NSUInteger {
 - (BOOL)isTextSelectedInEditor:(NSTextView *)textView;
 - (void)saveCurrentInputString;
 - (void)restoreLastInputString;
+- (NSUInteger)maxCaretIndex;
+- (void)setCaretIndex:(NSUInteger)index onField:(NSText *)fieldEditor;
+- (NSUInteger)getCaretIndexForField:(NSText *)fieldEditor;
 
 @end
 

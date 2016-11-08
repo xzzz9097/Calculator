@@ -24,7 +24,7 @@
 - (NSNumber *)computeResult;
 - (NSString *)formattedResultWithSubstitutions:(NSDictionary *)substitutions;
 - (NSString *)formattedResult;
-- (void)formatInput;
+- (NSAttributedString *)formattedInput;
 - (NSString *)errorString;
 - (void)saveCurrentInputString;
 - (void)restoreLastInputString;

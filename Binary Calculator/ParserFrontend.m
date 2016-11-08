@@ -51,12 +51,34 @@
     return [_outputFormatter stringFromNumber:[self computeResultWithSubstitutions:substitutions]];
 }
 
+- (void)setInputString:(NSAttributedString *)inputString {
+    NSString *selectedString = [[[inputString string] componentsSeparatedByString:@" = "]firstObject];
+
+    NSRange selectedRange = [[inputString string] rangeOfString:selectedString];
+
+    if (selectedRange.length) {
+        _inputString = [inputString attributedSubstringFromRange:selectedRange];
+    } else {
+        _inputString = nil;
+    }
+}
+
 - (NSString *)formattedResult {
     return [self formattedResultWithSubstitutions:nil];
 }
 
-- (void)formatInput {
-    _inputString = [_inputFormatter attributedStringForObjectValue:_inputString withDefaultAttributes:nil];
+- (NSAttributedString *)formattedInput {
+    NSMutableAttributedString *finalResult = [[_inputFormatter attributedStringForObjectValue:_inputString withDefaultAttributes:nil] mutableCopy];
+
+    if ([self formattedResult]) {
+        NSString *formattedResult = [NSString stringWithFormat:@" = %@", [self formattedResult]];
+
+        NSAttributedString *resultString = [[NSAttributedString alloc] initWithString:formattedResult attributes:nil];
+
+        [finalResult appendAttributedString:resultString];
+    }
+
+    return finalResult;
 }
 
 - (NSString *)errorString {

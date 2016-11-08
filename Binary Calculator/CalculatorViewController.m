@@ -62,8 +62,13 @@
 
 - (void)formatInput {
     if ([_parserFrontend inputString]) {
-        [_parserFrontend formatInput];
-        [_inputField setAttributedStringValue:[_parserFrontend inputString]];
+        [_inputField setAttributedStringValue:[_parserFrontend formattedInput]];
+
+        if ([self getCaretIndexForField:[_inputField currentEditor]] > [self maxCaretIndex]) {
+            [self setCaretIndex:[self maxCaretIndex] onField:[_inputField currentEditor]];
+        }
+    } else {
+        [_inputField setStringValue:@""];
     }
 }
 
@@ -107,7 +112,7 @@
 }
 
 - (BOOL)isTextFieldVoid {
-    return [[_inputField stringValue] length] == 0;
+    return [[_inputField stringValue] length] == 0 || [[_inputField stringValue] containsString:@" = "];
 }
 
 - (BOOL)isTextFieldValid {
@@ -135,6 +140,28 @@
     [_parserFrontend restoreLastInputString];
 
     [_inputField setAttributedStringValue:[_parserFrontend inputString]];
+}
+
+- (NSUInteger)maxCaretIndex {
+    if (_parserFrontend) {
+        return [[_parserFrontend inputString] length];
+    }
+
+    return 0;
+}
+
+- (void)setCaretIndex:(NSUInteger)index onField:(NSText *)fieldEditor {
+    if (fieldEditor) {
+        [fieldEditor setSelectedRange:NSMakeRange(index, 0)];
+    }
+}
+
+- (NSUInteger)getCaretIndexForField:(NSText *)fieldEditor {
+    if (fieldEditor) {
+        return [fieldEditor selectedRange].location;
+    }
+
+    return 0;
 }
 
 @end
