@@ -55,7 +55,6 @@
             _shouldResetHistory = false;
         }
 
-        [self updateResultField];
         [self updateErrorField];
     }
 }
@@ -78,22 +77,6 @@
     [_backgroundView setWantsLayer:true];
 
     [self updateErrorField];
-}
-
-- (void)updateResultField {
-    switch (_computationStatus) {
-        case COMPUTATION_DONE:
-            [_resultField setStringValue:_formattedResult];
-            break;
-        case COMPUTATION_VOID:
-            [_resultField setStringValue:@""];
-            break;
-        case COMPUTATION_ERROR:
-            [_resultField setStringValue:@"..."];
-            break;
-        default:
-            break;
-    }
 }
 
 - (void)updateErrorField {

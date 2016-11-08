@@ -20,7 +20,6 @@ typedef enum ComputationStatus : NSUInteger {
 @property (nonatomic) ComputationStatus computationStatus;
 
 @property (weak) IBOutlet NSTextField *inputField;
-@property (weak) IBOutlet NSTextField *resultField;
 @property (weak) IBOutlet NSTextField *errorField;
 
 @property (weak) NSTextView *fieldEditor;
@@ -30,7 +29,6 @@ typedef enum ComputationStatus : NSUInteger {
 - (void)compute;
 - (void)formatInput;
 - (void)prepareErrorField;
-- (void)updateResultField;
 - (void)updateErrorField;
 - (BOOL)isTextFieldVoid;
 - (BOOL)isTextFieldValid;
