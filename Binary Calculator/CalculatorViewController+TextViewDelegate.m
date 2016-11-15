@@ -38,14 +38,7 @@
         return true;
     }
 
-    // Prevent pgDown (cmd+>) from going beyound the input
-    if (commandSelector == @selector(moveToRightEndOfLine:)) {
-        [self setCaretIndex:[self maxCaretIndex] onField:textView];
-
-        return true;
-    }
-
-    // Same for > only
+    // Prevent right arrow from going beyound the input
     if (commandSelector == @selector(moveRight:)) {
         NSUInteger caretPosition = [self getCaretIndexForField:textView];
         NSUInteger maxCaretPosition = [self maxCaretIndex];
